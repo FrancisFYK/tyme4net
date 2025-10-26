@@ -1,8 +1,10 @@
-using tyme.culture;
+﻿using tyme.culture;
 using tyme.eightchar;
 using tyme.enums;
 using tyme.sixtycycle;
 using tyme.solar;
+
+using Tyme.Culture;
 
 using Xunit.Abstractions;
 
@@ -29,8 +31,19 @@ public class PaiPanTest
 
         _testOutputHelper.WriteLine("\n=== 从阳历日期转换的八字 ===");
         _testOutputHelper.WriteLine($"阳历时间：{solarTime}");
-        _testOutputHelper.WriteLine($"对应农历：{solarTime.GetLunarHour().LunarDay.LunarMonth.LunarYear}年{solarTime.GetLunarHour().LunarDay.LunarMonth.Month}月{solarTime.GetLunarHour().LunarDay.Day}日{solarTime.GetLunarHour().Hour}时");
+        _testOutputHelper.WriteLine($"对应农历：{solarTime.GetLunarHour().LunarDay.LunarMonth.LunarYear}年{solarTime.GetLunarHour().LunarDay.LunarMonth.Month}月{solarTime.GetLunarHour().LunarDay.Day}日{solarTime.GetLunarHour().Hour}时  {solarTime.GetLunarHour().GetName()}");
         PrintEightCharInfo(eightCharFromSolar, childLimit.Gender);
+
+
+        {
+            //人元司令分野
+            _testOutputHelper.WriteLine($"人元司令分野： {solarTime.SolarDay.HideHeavenStemDay.GetName()}");
+        }
+
+        {
+            var result = solarTime.GetLunarHour().GetBoneFateResult(Gender.Man);
+            _testOutputHelper.WriteLine($"袁天罡称骨： 骨重 {result.Weight}\r  歌诀  {result.Song} \r 详解 {result.Details}");
+        }
     }
 
     /// <summary>
@@ -70,6 +83,7 @@ public class PaiPanTest
         _testOutputHelper.WriteLine($"胎息：{eightChar.FetalBreath}({eightChar.FetalBreath.Sound})");
         _testOutputHelper.WriteLine($"命宫：{eightChar.OwnSign}({eightChar.OwnSign.Sound})");
         _testOutputHelper.WriteLine($"身宫：{eightChar.BodySign}({eightChar.BodySign.Sound})");
+
     }
 
 

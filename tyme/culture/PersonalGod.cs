@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,88 +8,80 @@ using tyme.sixtycycle;
 namespace tyme.culture
 {
     /// <summary>
-    /// ¸öÈË°Ë×ÖÉñÉ·
+    /// ä¸ªäººå…«å­—ç¥ç…
     /// </summary>
     public static class PersonalGod
     {
         /// <summary>
-        /// ÁùÊ®¼××Ó±í
+        /// å…­åç”²å­è¡¨
         /// </summary>
         private static readonly string[] JIAZI = new[]
         {
-            "¡¡",
-            "¼××Ó", "ÒÒ³ó", "±ûÒú", "¶¡Ã®", "Îì³½", "¼ºËÈ", "¸ıÎç", "ĞÁÎ´", "ÈÉÉê", "¹ïÓÏ",
-            "¼×Ğç", "ÒÒº¥", "±û×Ó", "¶¡³ó", "ÎìÒú", "¼ºÃ®", "¸ı³½", "ĞÁËÈ", "ÈÉÎç", "¹ïÎ´",
-            "¼×Éê", "ÒÒÓÏ", "±ûĞç", "¶¡º¥", "Îì×Ó", "¼º³ó", "¸ıÒú", "ĞÁÃ®", "ÈÉ³½", "¹ïËÈ",
-            "¼×Îç", "ÒÒÎ´", "±ûÉê", "¶¡ÓÏ", "ÎìĞç", "¼ºº¥", "¸ı×Ó", "ĞÁ³ó", "ÈÉÒú", "¹ïÃ®",
-            "¼×³½", "ÒÒËÈ", "±ûÎç", "¶¡Î´", "ÎìÉê", "¼ºÓÏ", "¸ıĞç", "ĞÁº¥", "ÈÉ×Ó", "¹ï³ó",
-            "¼×Òú", "ÒÒÃ®", "±û³½", "¶¡ËÈ", "ÎìÎç", "¼ºÎ´", "¸ıÉê", "ĞÁÓÏ", "ÈÉĞç", "¹ïº¥"
+            "ã€€",
+            "ç”²å­", "ä¹™ä¸‘", "ä¸™å¯…", "ä¸å¯", "æˆŠè¾°", "å·±å·³", "åºšåˆ", "è¾›æœª", "å£¬ç”³", "ç™¸é…‰",
+            "ç”²æˆŒ", "ä¹™äº¥", "ä¸™å­", "ä¸ä¸‘", "æˆŠå¯…", "å·±å¯", "åºšè¾°", "è¾›å·³", "å£¬åˆ", "ç™¸æœª",
+            "ç”²ç”³", "ä¹™é…‰", "ä¸™æˆŒ", "ä¸äº¥", "æˆŠå­", "å·±ä¸‘", "åºšå¯…", "è¾›å¯", "å£¬è¾°", "ç™¸å·³",
+            "ç”²åˆ", "ä¹™æœª", "ä¸™ç”³", "ä¸é…‰", "æˆŠæˆŒ", "å·±äº¥", "åºšå­", "è¾›ä¸‘", "å£¬å¯…", "ç™¸å¯",
+            "ç”²è¾°", "ä¹™å·³", "ä¸™åˆ", "ä¸æœª", "æˆŠç”³", "å·±é…‰", "åºšæˆŒ", "è¾›äº¥", "å£¬å­", "ç™¸ä¸‘",
+            "ç”²å¯…", "ä¹™å¯", "ä¸™è¾°", "ä¸å·³", "æˆŠåˆ", "å·±æœª", "åºšç”³", "è¾›é…‰", "å£¬æˆŒ", "ç™¸äº¥"
         };
 
         /// <summary>
-        /// µØÖ§Ë³Ğò
-        /// </summary>
-        private static readonly string[] EARTH_BRANCHES = new[]
-        {
-            "×Ó", "³ó", "Òú", "Ã®", "³½", "ËÈ", "Îç", "Î´", "Éê", "ÓÏ", "Ğç", "º¥"
-        };
-
-        /// <summary>
-        /// É¥ÃÅµØÖ§¶ÔÓ¦±í
+        /// ä¸§é—¨åœ°æ”¯å¯¹åº”è¡¨
         /// </summary>
         private static readonly string[] SANG_MEN = new[]
         {
-            "Òú", "Ã®", "³½", "ËÈ", "Îç", "Î´", "Éê", "ÓÏ", "Ğç", "º¥", "×Ó", "³ó"
+            "å¯…", "å¯", "è¾°", "å·³", "åˆ", "æœª", "ç”³", "é…‰", "æˆŒ", "äº¥", "å­", "ä¸‘"
         };
 
         /// <summary>
-        /// µõ¿ÍµØÖ§¶ÔÓ¦±í
+        /// åŠå®¢åœ°æ”¯å¯¹åº”è¡¨
         /// </summary>
         private static readonly string[] DIAO_KE = new[]
         {
-            "Ğç", "º¥", "×Ó", "³ó", "Òú", "Ã®", "³½", "ËÈ", "Îç", "Î´", "Éê", "ÓÏ"
+            "æˆŒ", "äº¥", "å­", "ä¸‘", "å¯…", "å¯", "è¾°", "å·³", "åˆ", "æœª", "ç”³", "é…‰"
         };
 
         /// <summary>
-        /// ÅûÂéµØÖ§¶ÔÓ¦±í
+        /// æŠ«éº»åœ°æ”¯å¯¹åº”è¡¨
         /// </summary>
         private static readonly string[] PI_MA = new[]
         {
-            "ÓÏ", "Ğç", "º¥", "×Ó", "³ó", "Òú", "Ã®", "³½", "ËÈ", "Îç", "Î´", "Éê"
+            "é…‰", "æˆŒ", "äº¥", "å­", "ä¸‘", "å¯…", "å¯", "è¾°", "å·³", "åˆ", "æœª", "ç”³"
         };
 
         /// <summary>
-        /// ÖùÎ»Ã¶¾Ù
+        /// æŸ±ä½æšä¸¾
         /// </summary>
         public enum PillarPosition
         {
-            /// <summary>ÄêÖù</summary>
+            /// <summary>å¹´æŸ±</summary>
             Year = 1,
-            /// <summary>ÔÂÖù</summary>
+            /// <summary>æœˆæŸ±</summary>
             Month = 2,
-            /// <summary>ÈÕÖù</summary>
+            /// <summary>æ—¥æŸ±</summary>
             Day = 3,
-            /// <summary>Ê±Öù</summary>
+            /// <summary>æ—¶æŸ±</summary>
             Hour = 4,
-            /// <summary>´óÔË</summary>
+            /// <summary>å¤§è¿</summary>
             GreatLuck = 5,
-            /// <summary>Á÷Äê</summary>
+            /// <summary>æµå¹´</summary>
             YearlyLuck = 6,
-            /// <summary>Á÷ÔÂ</summary>
+            /// <summary>æµæœˆ</summary>
             MonthlyLuck = 7,
-            /// <summary>Á÷Ê±</summary>
+            /// <summary>æµæ—¶</summary>
             HourlyLuck = 8
         }
 
         /// <summary>
-        /// ¸ù¾İ¸ÉÖ§ºÍ°Ë×ÖĞÅÏ¢£¬²éÑ¯ÉñÉ·×éºÏ
+        /// æ ¹æ®å¹²æ”¯å’Œå…«å­—ä¿¡æ¯ï¼ŒæŸ¥è¯¢ç¥ç…ç»„åˆ
         /// </summary>
-        /// <param name="ganZhi">Òª²éÑ¯ÉñÉ·µÄÄ³Öù¸ÉÖ§£¬ÀıÈçÄêÖùÎª¼×Òú£¬Ôò²ÎÊıÖµÎª£º¼×Òú</param>
-        /// <param name="eightChar">°Ë×Ö¶ÔÏó</param>
-        /// <param name="isMale">ĞÔ±ğ£¬trueÎªÄĞ£¬·ñÔòÎªÅ®</param>
-        /// <param name="position">²éµÄÊÇÄÄÒ»Öù</param>
-        /// <param name="yearSound">ÄêÖùÄÉÒô£¬²éÑ¯Ñ§ÌÃ¡¢´Ê¹İÉñÉ·Ê±ÓÃ¡£ÀıÈç£ºº£ÖĞ½ğ</param>
-        /// <returns>·µ»ØÉñÉ·Ãû³ÆÁĞ±í</returns>
+        /// <param name="ganZhi">è¦æŸ¥è¯¢ç¥ç…çš„æŸæŸ±å¹²æ”¯ï¼Œä¾‹å¦‚å¹´æŸ±ä¸ºç”²å¯…ï¼Œåˆ™å‚æ•°å€¼ä¸ºï¼šç”²å¯…</param>
+        /// <param name="eightChar">å…«å­—å¯¹è±¡</param>
+        /// <param name="isMale">æ€§åˆ«ï¼Œtrueä¸ºç”·ï¼Œå¦åˆ™ä¸ºå¥³</param>
+        /// <param name="position">æŸ¥çš„æ˜¯å“ªä¸€æŸ±</param>
+        /// <param name="yearSound">å¹´æŸ±çº³éŸ³ï¼ŒæŸ¥è¯¢å­¦å ‚ã€è¯é¦†ç¥ç…æ—¶ç”¨ã€‚ä¾‹å¦‚ï¼šæµ·ä¸­é‡‘</param>
+        /// <returns>è¿”å›ç¥ç…åç§°åˆ—è¡¨</returns>
         public static List<string> QueryShenSha(SixtyCycle ganZhi, EightChar eightChar, bool isMale,
             PillarPosition position, string yearSound)
         {
@@ -107,346 +99,346 @@ namespace tyme.culture
             var stem = ganZhi.HeavenStem;
             var branch = ganZhi.EarthBranch;
 
-            // ÌìÒÒ¹óÈË
+            // å¤©ä¹™è´µäºº
             if (IsTianYiGuiRen(dayStem, branch) || IsTianYiGuiRen(yearStem, branch))
             {
-                shenShaList.Add("ÌìÒÒ¹óÈË");
+                shenShaList.Add("å¤©ä¹™è´µäºº");
             }
 
-            // Ì«¼«¹óÈË
+            // å¤ªæè´µäºº
             if (IsTaiJiGuiRen(dayStem, branch) || IsTaiJiGuiRen(yearStem, branch))
             {
-                shenShaList.Add("Ì«¼«¹óÈË");
+                shenShaList.Add("å¤ªæè´µäºº");
             }
 
-            // ÌìµÂ¹óÈË
+            // å¤©å¾·è´µäºº
             if (IsTianDeGuiRen(monthBranch, stem) || IsTianDeGuiRen(monthBranch, branch))
             {
-                shenShaList.Add("ÌìµÂ¹óÈË");
+                shenShaList.Add("å¤©å¾·è´µäºº");
             }
 
-            // ÔÂµÂ¹óÈË
+            // æœˆå¾·è´µäºº
             if (IsYueDe(monthBranch, stem))
             {
-                shenShaList.Add("ÔÂµÂ¹óÈË");
+                shenShaList.Add("æœˆå¾·è´µäºº");
             }
 
-            // µÂĞã¹óÈË
+            // å¾·ç§€è´µäºº
             var allStems = new[] { yearStem, monthStem, dayStem, hourStem };
             if (IsDeXiuGuiRen(monthBranch, allStems))
             {
-                shenShaList.Add("µÂĞã¹óÈË");
+                shenShaList.Add("å¾·ç§€è´µäºº");
             }
 
-            // ÌìµÂºÏ
+            // å¤©å¾·åˆ
             if (IsTianDeHe(monthBranch, stem) || IsTianDeHe(monthBranch, branch))
             {
-                shenShaList.Add("ÌìµÂºÏ");
+                shenShaList.Add("å¤©å¾·åˆ");
             }
 
-            // ÔÂµÂºÏ
+            // æœˆå¾·åˆ
             if (IsYueDeHe(monthBranch, stem))
             {
-                shenShaList.Add("ÔÂµÂºÏ");
+                shenShaList.Add("æœˆå¾·åˆ");
             }
 
-            // ¸£ĞÇ¹óÈË
+            // ç¦æ˜Ÿè´µäºº
             if (IsFuXing(yearStem, branch) || IsFuXing(dayStem, branch))
             {
-                shenShaList.Add("¸£ĞÇ¹óÈË");
+                shenShaList.Add("ç¦æ˜Ÿè´µäºº");
             }
 
-            // ÎÄ²ı¹óÈË
+            // æ–‡æ˜Œè´µäºº
             if (IsWenChang(dayStem, branch) || IsWenChang(yearStem, branch))
             {
-                shenShaList.Add("ÎÄ²ı¹óÈË");
+                shenShaList.Add("æ–‡æ˜Œè´µäºº");
             }
 
-            // Ñ§ÌÃ£¨²»²éÈÕÖù£©
+            // å­¦å ‚ï¼ˆä¸æŸ¥æ—¥æŸ±ï¼‰
             if (position != PillarPosition.Day && IsXueTang(yearSound, stem, branch))
             {
-                shenShaList.Add("Ñ§ÌÃ");
+                shenShaList.Add("å­¦å ‚");
             }
 
-            // ´Ê¹İ£¨²»²éÈÕÖù£©
+            // è¯é¦†ï¼ˆä¸æŸ¥æ—¥æŸ±ï¼‰
             if (position != PillarPosition.Day && IsCiGuan(yearSound, stem, branch))
             {
-                shenShaList.Add("´Ê¹İ");
+                shenShaList.Add("è¯é¦†");
             }
 
-            // ¿ıî¸£¨½ö²éÈÕÖù£©
+            // é­ç½¡ï¼ˆä»…æŸ¥æ—¥æŸ±ï¼‰
             if (position == PillarPosition.Day && IsKuiGang(dayStem, dayBranch))
             {
-                shenShaList.Add("¿ıî¸");
+                shenShaList.Add("é­ç½¡");
             }
 
-            // ¹úÓ¡¹óÈË
+            // å›½å°è´µäºº
             if (IsGuoYin(dayStem, branch) || IsGuoYin(yearStem, branch))
             {
-                shenShaList.Add("¹úÓ¡¹óÈË");
+                shenShaList.Add("å›½å°è´µäºº");
             }
 
-            // æäÂí
+            // é©¿é©¬
             if ((position != PillarPosition.Day && IsYiMa(dayBranch, branch)) ||
                 (position != PillarPosition.Year && IsYiMa(yearBranch, branch)))
             {
-                shenShaList.Add("æäÂí");
+                shenShaList.Add("é©¿é©¬");
             }
 
-            // »ª¸Ç
+            // åç›–
             if ((position != PillarPosition.Day && IsHuaGai(dayBranch, branch)) ||
                 (position != PillarPosition.Year && IsHuaGai(yearBranch, branch)))
             {
-                shenShaList.Add("»ª¸Ç");
+                shenShaList.Add("åç›–");
             }
 
-            // ½«ĞÇ
+            // å°†æ˜Ÿ
             if ((position != PillarPosition.Day && IsJiangXing(dayBranch, branch)) ||
                 (position != PillarPosition.Year && IsJiangXing(yearBranch, branch)))
             {
-                shenShaList.Add("½«ĞÇ");
+                shenShaList.Add("å°†æ˜Ÿ");
             }
 
-            // ½ğÓß
+            // é‡‘èˆ†
             if (IsJinYu(dayStem, branch) || IsJinYu(yearStem, branch))
             {
-                shenShaList.Add("½ğÓß");
+                shenShaList.Add("é‡‘èˆ†");
             }
 
-            // ½ğÉñ
+            // é‡‘ç¥
             if ((position == PillarPosition.Day && IsJinShen(dayStem, dayBranch)) ||
                 (position == PillarPosition.Hour && IsJinShen(hourStem, hourBranch)))
             {
-                shenShaList.Add("½ğÉñ");
+                shenShaList.Add("é‡‘ç¥");
             }
 
-            // Îå¹í
+            // äº”é¬¼
             if (position != PillarPosition.Month && IsWuGui(monthBranch, branch))
             {
-                shenShaList.Add("Îå¹í");
+                shenShaList.Add("äº”é¬¼");
             }
 
-            // ÌìÒ½
+            // å¤©åŒ»
             if (position != PillarPosition.Month && IsTianYi(monthBranch, branch))
             {
-                shenShaList.Add("ÌìÒ½");
+                shenShaList.Add("å¤©åŒ»");
             }
 
-            // Â»Éñ
+            // ç¦„ç¥
             if (IsLuShen(dayStem, branch))
             {
-                shenShaList.Add("Â»Éñ");
+                shenShaList.Add("ç¦„ç¥");
             }
 
-            // ÌìÉâ
+            // å¤©èµ¦
             if (IsTianShe(monthBranch, dayStem, dayBranch))
             {
-                shenShaList.Add("ÌìÉâ");
+                shenShaList.Add("å¤©èµ¦");
             }
 
-            // ºìğ½
+            // çº¢é¸¾
             if (position != PillarPosition.Year && IsHongLuan(yearBranch, branch))
             {
-                shenShaList.Add("ºìğ½");
+                shenShaList.Add("çº¢é¸¾");
             }
 
-            // ÌìÏ²
+            // å¤©å–œ
             if (position != PillarPosition.Year && IsTianXi(yearBranch, branch))
             {
-                shenShaList.Add("ÌìÏ²");
+                shenShaList.Add("å¤©å–œ");
             }
 
-            // Á÷Ï¼
+            // æµéœ
             if (IsLiuXia(dayStem, branch))
             {
-                shenShaList.Add("Á÷Ï¼");
+                shenShaList.Add("æµéœ");
             }
 
-            // ºìÑŞ
+            // çº¢è‰³
             if (IsHongYan(dayStem, branch))
             {
-                shenShaList.Add("ºìÑŞÉ·");
+                shenShaList.Add("çº¢è‰³ç…");
             }
 
-            // ÌìÂŞ
+            // å¤©ç½—
             if ((position != PillarPosition.Day && IsTianLuo(dayBranch, branch)) ||
                 (position != PillarPosition.Year && IsTianLuo(yearBranch, branch)))
             {
-                shenShaList.Add("ÌìÂŞ");
+                shenShaList.Add("å¤©ç½—");
             }
 
-            // µØÍø
+            // åœ°ç½‘
             if ((position != PillarPosition.Day && IsDiWang(dayBranch, branch)) ||
                 (position != PillarPosition.Year && IsDiWang(yearBranch, branch)))
             {
-                shenShaList.Add("µØÍø");
+                shenShaList.Add("åœ°ç½‘");
             }
 
-            // ÑòÈĞ
+            // ç¾Šåˆƒ
             if (IsYangRen(dayStem, branch))
             {
-                shenShaList.Add("ÑòÈĞ");
+                shenShaList.Add("ç¾Šåˆƒ");
             }
 
-            // ·ÉÈĞ
+            // é£åˆƒ
             if (IsFeiRen(dayStem, branch))
             {
-                shenShaList.Add("·ÉÈĞ");
+                shenShaList.Add("é£åˆƒ");
             }
 
-            // ÑªÈĞ
+            // è¡€åˆƒ
             if (IsXueRen(monthBranch, branch))
             {
-                shenShaList.Add("ÑªÈĞ");
+                shenShaList.Add("è¡€åˆƒ");
             }
 
-            // °Ë×¨£¨½ö²éÈÕÖù£©
+            // å…«ä¸“ï¼ˆä»…æŸ¥æ—¥æŸ±ï¼‰
             if (position == PillarPosition.Day && IsBaZhuan(dayStem, dayBranch))
             {
-                shenShaList.Add("°Ë×¨");
+                shenShaList.Add("å…«ä¸“");
             }
 
-            // ¾Å³ó£¨½ö²éÈÕÖù£©
+            // ä¹ä¸‘ï¼ˆä»…æŸ¥æ—¥æŸ±ï¼‰
             if (position == PillarPosition.Day && IsJiuChou(dayStem, dayBranch))
             {
-                shenShaList.Add("¾Å³óÈÕ");
+                shenShaList.Add("ä¹ä¸‘æ—¥");
             }
 
-            // ½ÙÉ·
+            // åŠ«ç…
             if (IsJieSha(dayBranch, branch) || IsJieSha(yearBranch, branch))
             {
-                shenShaList.Add("½ÙÉ·");
+                shenShaList.Add("åŠ«ç…");
             }
 
-            // ÔÖÉ·
+            // ç¾ç…
             if (IsZaiSha(yearBranch, branch))
             {
-                shenShaList.Add("ÔÖÉ·");
+                shenShaList.Add("ç¾ç…");
             }
 
-            // Ôª³½
+            // å…ƒè¾°
             if (position != PillarPosition.Year &&
                 IsYuanChen(yearBranch, branch, isMale, IsYangStem(yearStem)))
             {
-                shenShaList.Add("Ôª³½");
+                shenShaList.Add("å…ƒè¾°");
             }
 
-            // ¿ÕÍö
+            // ç©ºäº¡
             if ((position != PillarPosition.Day && IsKongWang(eightChar.Day, branch)) ||
                 (position != PillarPosition.Year && IsKongWang(eightChar.Year, branch)))
             {
-                shenShaList.Add("¿ÕÍö");
+                shenShaList.Add("ç©ºäº¡");
             }
 
-            // Í¯×Ó
+            // ç«¥å­
             if ((position == PillarPosition.Day && IsTongZi(monthBranch, yearSound, dayBranch)) ||
                 (position == PillarPosition.Hour && IsTongZi(monthBranch, yearSound, hourBranch)))
             {
-                shenShaList.Add("Í¯×ÓÉ·");
+                shenShaList.Add("ç«¥å­ç…");
             }
 
-            // Ìì³ø
+            // å¤©å¨
             if (IsTianChu(yearStem, dayStem, branch))
             {
-                shenShaList.Add("Ìì³ø¹óÈË");
+                shenShaList.Add("å¤©å¨è´µäºº");
             }
 
-            // ¹Â³½
+            // å­¤è¾°
             if (position != PillarPosition.Year && IsGuChen(yearBranch, branch))
             {
-                shenShaList.Add("¹Â³½");
+                shenShaList.Add("å­¤è¾°");
             }
 
-            // ¹ÑËŞ
+            // å¯¡å®¿
             if (position != PillarPosition.Year && IsGuaSu(yearBranch, branch))
             {
-                shenShaList.Add("¹ÑËŞ");
+                shenShaList.Add("å¯¡å®¿");
             }
 
-            // ÍöÉñ
+            // äº¡ç¥
             if ((position != PillarPosition.Day && IsWangShen(dayBranch, branch)) ||
                 (position != PillarPosition.Year && IsWangShen(yearBranch, branch)))
             {
-                shenShaList.Add("ÍöÉñ");
+                shenShaList.Add("äº¡ç¥");
             }
 
-            // Ê®¶ñ´ó°Ü£¨½ö²éÈÕÖù£©
+            // åæ¶å¤§è´¥ï¼ˆä»…æŸ¥æ—¥æŸ±ï¼‰
             if (position == PillarPosition.Day && IsShiEDaBai(dayStem, dayBranch))
             {
-                shenShaList.Add("Ê®¶ñ´ó°Ü");
+                shenShaList.Add("åæ¶å¤§è´¥");
             }
 
-            // ÌÒ»¨
+            // æ¡ƒèŠ±
             if (IsTaoHua(dayBranch, branch) || IsTaoHua(yearBranch, branch))
             {
-                shenShaList.Add("ÌÒ»¨");
+                shenShaList.Add("æ¡ƒèŠ±");
             }
 
-            // ¹Âğ½£¨½ö²éÈÕÖù£©
+            // å­¤é¸¾ï¼ˆä»…æŸ¥æ—¥æŸ±ï¼‰
             if (position == PillarPosition.Day && IsGuLuan(dayStem, dayBranch))
             {
-                shenShaList.Add("¹Âğ½");
+                shenShaList.Add("å­¤é¸¾");
             }
 
-            // Òõ²îÑô´í£¨½ö²éÈÕÖù£©
+            // é˜´å·®é˜³é”™ï¼ˆä»…æŸ¥æ—¥æŸ±ï¼‰
             if (position == PillarPosition.Day && IsYinYangChaCuo(dayStem, dayBranch))
             {
-                shenShaList.Add("Òõ²îÑô´í");
+                shenShaList.Add("é˜´å·®é˜³é”™");
             }
 
-            // ËÄ·Ï£¨½ö²éÈÕÖù£©
+            // å››åºŸï¼ˆä»…æŸ¥æ—¥æŸ±ï¼‰
             if (position == PillarPosition.Day && IsSiFei(monthBranch, dayStem, dayBranch))
             {
-                shenShaList.Add("ËÄ·Ï");
+                shenShaList.Add("å››åºŸ");
             }
 
-            // É¥ÃÅ
+            // ä¸§é—¨
             if (position != PillarPosition.Year && IsSangMen(yearBranch, branch))
             {
-                shenShaList.Add("É¥ÃÅ");
+                shenShaList.Add("ä¸§é—¨");
             }
 
-            // µõ¿Í
+            // åŠå®¢
             if (position != PillarPosition.Year && IsDiaoKe(yearBranch, branch))
             {
-                shenShaList.Add("µõ¿Í");
+                shenShaList.Add("åŠå®¢");
             }
 
-            // ÅûÂé
+            // æŠ«éº»
             if (position != PillarPosition.Year && IsPiMa(yearBranch, branch))
             {
-                shenShaList.Add("ÅûÂé");
+                shenShaList.Add("æŠ«éº»");
             }
 
-            // Ê®Áé£¨½ö²éÈÕÖù£©
+            // åçµï¼ˆä»…æŸ¥æ—¥æŸ±ï¼‰
             if (position == PillarPosition.Day && IsShiLing(dayStem, dayBranch))
             {
-                shenShaList.Add("Ê®Áé");
+                shenShaList.Add("åçµ");
             }
 
             return shenShaList;
         }
 
-        #region ÉñÉ·ÅĞ¶Ï·½·¨
+        #region ç¥ç…åˆ¤æ–­æ–¹æ³•
 
         /// <summary>
-        /// Ìì³ø¹óÈË
-        /// ²é·¨£ºÒÔÄê¸É¡¢ÈÕ¸É²éÓàËÄÖ§
-        /// ±û¸É¼ûËÈ£¬¶¡¸É¼ûÎç£¬Îì¸É¼ûÉê£¬¼º¸É¼ûÓÏ
-        /// ¸ı¸É¼ûº¥£¬ĞÁ¸É¼û×Ó£¬ÈÉ¸É¼ûÒú£¬¹ï¸É¼ûÃ®
+        /// å¤©å¨è´µäºº
+        /// æŸ¥æ³•ï¼šä»¥å¹´å¹²ã€æ—¥å¹²æŸ¥ä½™å››æ”¯
+        /// ä¸™å¹²è§å·³ï¼Œä¸å¹²è§åˆï¼ŒæˆŠå¹²è§ç”³ï¼Œå·±å¹²è§é…‰
+        /// åºšå¹²è§äº¥ï¼Œè¾›å¹²è§å­ï¼Œå£¬å¹²è§å¯…ï¼Œç™¸å¹²è§å¯
         /// </summary>
         private static bool IsTianChu(HeavenStem yearStem, HeavenStem dayStem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 2, 5 },  // ±û¼ûËÈ
-                { 3, 6 },  // ¶¡¼ûÎç
-                { 4, 8 },  // Îì¼ûÉê
-                { 5, 9 },  // ¼º¼ûÓÏ
-                { 6, 11 }, // ¸ı¼ûº¥
-                { 7, 0 },  // ĞÁ¼û×Ó
-                { 8, 2 },  // ÈÉ¼ûÒú
-                { 9, 3 }   // ¹ï¼ûÃ®
+                { 2, 5 },  // ä¸™è§å·³
+                { 3, 6 },  // ä¸è§åˆ
+                { 4, 8 },  // æˆŠè§ç”³
+                { 5, 9 },  // å·±è§é…‰
+                { 6, 11 }, // åºšè§äº¥
+                { 7, 0 },  // è¾›è§å­
+                { 8, 2 },  // å£¬è§å¯…
+                { 9, 3 }   // ç™¸è§å¯
             };
 
             return (rules.ContainsKey(yearStem.Index) && rules[yearStem.Index] == branch.Index) ||
@@ -454,11 +446,11 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// µÂĞã¹óÈË
-        /// ÒúÎçĞçÔÂ£¬±û¶¡ÎªµÂ£¬Îì¹ïÎªĞã
-        /// Éê×Ó³½ÔÂ£¬ÈÉ¹ïÎì¼ºÎªµÂ£¬±ûĞÁ¼×¼ºÎªĞã
-        /// ËÈÓÏ³óÔÂ£¬¸ıĞÁÎªµÂ£¬ÒÒ¸ıÎªĞã
-        /// º¥Ã®Î´ÔÂ£¬¼×ÒÒÎªµÂ£¬¶¡ÈÉÎªĞã
+        /// å¾·ç§€è´µäºº
+        /// å¯…åˆæˆŒæœˆï¼Œä¸™ä¸ä¸ºå¾·ï¼ŒæˆŠç™¸ä¸ºç§€
+        /// ç”³å­è¾°æœˆï¼Œå£¬ç™¸æˆŠå·±ä¸ºå¾·ï¼Œä¸™è¾›ç”²å·±ä¸ºç§€
+        /// å·³é…‰ä¸‘æœˆï¼Œåºšè¾›ä¸ºå¾·ï¼Œä¹™åºšä¸ºç§€
+        /// äº¥å¯æœªæœˆï¼Œç”²ä¹™ä¸ºå¾·ï¼Œä¸å£¬ä¸ºç§€
         /// </summary>
         private static bool IsDeXiuGuiRen(EarthBranch monthBranch, HeavenStem[] allStems)
         {
@@ -472,31 +464,31 @@ namespace tyme.culture
                 return allStems.Any(s => s.Index == stem1) && allStems.Any(s => s.Index == stem2);
             }
 
-            // »ğ¾Ö£ºÒúÎçĞç
+            // ç«å±€ï¼šå¯…åˆæˆŒ
             if (new[] { 2, 6, 10 }.Contains(monthBranch.Index))
             {
-                // µÂ£º±û¶¡£¬Ğã£ºÎì¹ï
+                // å¾·ï¼šä¸™ä¸ï¼Œç§€ï¼šæˆŠç™¸
                 return HasStem(2, 3) && HasCombination(4, 9);
             }
 
-            // Ë®¾Ö£ºÉê×Ó³½
+            // æ°´å±€ï¼šç”³å­è¾°
             if (new[] { 8, 0, 4 }.Contains(monthBranch.Index))
             {
-                // µÂ£ºÈÉ¹ïÎì¼º£¬Ğã£º±ûĞÁ»ò¼×¼º
+                // å¾·ï¼šå£¬ç™¸æˆŠå·±ï¼Œç§€ï¼šä¸™è¾›æˆ–ç”²å·±
                 return HasStem(8, 9, 4, 5) && (HasCombination(2, 7) || HasCombination(0, 5));
             }
 
-            // ½ğ¾Ö£ºËÈÓÏ³ó
+            // é‡‘å±€ï¼šå·³é…‰ä¸‘
             if (new[] { 5, 9, 1 }.Contains(monthBranch.Index))
             {
-                // µÂ£º¸ıĞÁ£¬Ğã£ºÒÒ¸ı
+                // å¾·ï¼šåºšè¾›ï¼Œç§€ï¼šä¹™åºš
                 return HasStem(6, 7) && HasCombination(1, 6);
             }
 
-            // Ä¾¾Ö£ºº¥Ã®Î´
+            // æœ¨å±€ï¼šäº¥å¯æœª
             if (new[] { 11, 3, 7 }.Contains(monthBranch.Index))
             {
-                // µÂ£º¼×ÒÒ£¬Ğã£º¶¡ÈÉ
+                // å¾·ï¼šç”²ä¹™ï¼Œç§€ï¼šä¸å£¬
                 return HasStem(0, 1) && HasCombination(3, 8);
             }
 
@@ -504,9 +496,9 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ¿ÕÍö
-        /// ¼××ÓÑ®ÔÚĞçº¥£¬¼×ĞçÑ®ÔÚÉêÓÏ£¬¼×ÉêÑ®ÔÚÎçÎ´
-        /// ¼×ÎçÑ®ÔÚ³½ËÈ£¬¼×³½Ñ®ÔÚÒúÃ®£¬¼×ÒúÑ®ÔÚ×Ó³ó
+        /// ç©ºäº¡
+        /// ç”²å­æ—¬åœ¨æˆŒäº¥ï¼Œç”²æˆŒæ—¬åœ¨ç”³é…‰ï¼Œç”²ç”³æ—¬åœ¨åˆæœª
+        /// ç”²åˆæ—¬åœ¨è¾°å·³ï¼Œç”²è¾°æ—¬åœ¨å¯…å¯ï¼Œç”²å¯…æ—¬åœ¨å­ä¸‘
         /// </summary>
         private static bool IsKongWang(SixtyCycle pillar, EarthBranch branch)
         {
@@ -515,83 +507,83 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÌÒ»¨
-        /// Éê×Ó³½ÔÚÓÏ£¬ÒúÎçĞçÔÚÃ®£¬ËÈÓÏ³óÔÚÎç£¬º¥Ã®Î´ÔÚ×Ó
+        /// æ¡ƒèŠ±
+        /// ç”³å­è¾°åœ¨é…‰ï¼Œå¯…åˆæˆŒåœ¨å¯ï¼Œå·³é…‰ä¸‘åœ¨åˆï¼Œäº¥å¯æœªåœ¨å­
         /// </summary>
         private static bool IsTaoHua(EarthBranch baseBranch, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 8, 9 }, { 0, 9 }, { 4, 9 },  // Éê×Ó³½¼ûÓÏ
-                { 2, 3 }, { 6, 3 }, { 10, 3 }, // ÒúÎçĞç¼ûÃ®
-                { 5, 6 }, { 9, 6 }, { 1, 6 },  // ËÈÓÏ³ó¼ûÎç
-                { 11, 0 }, { 3, 0 }, { 7, 0 }  // º¥Ã®Î´¼û×Ó
+                { 8, 9 }, { 0, 9 }, { 4, 9 },  // ç”³å­è¾°è§é…‰
+                { 2, 3 }, { 6, 3 }, { 10, 3 }, // å¯…åˆæˆŒè§å¯
+                { 5, 6 }, { 9, 6 }, { 1, 6 },  // å·³é…‰ä¸‘è§åˆ
+                { 11, 0 }, { 3, 0 }, { 7, 0 }  // äº¥å¯æœªè§å­
             };
 
             return rules.ContainsKey(baseBranch.Index) && rules[baseBranch.Index] == branch.Index;
         }
 
         /// <summary>
-        /// Òõ²îÑô´í
-        /// ±û×Ó¡¢¶¡³ó¡¢ÎìÒú¡¢ĞÁÃ®¡¢ÈÉ³½¡¢¹ïËÈ
-        /// ±ûÎç¡¢¶¡Î´¡¢ÎìÉê¡¢ĞÁÓÏ¡¢ÈÉĞç¡¢¹ïº¥
+        /// é˜´å·®é˜³é”™
+        /// ä¸™å­ã€ä¸ä¸‘ã€æˆŠå¯…ã€è¾›å¯ã€å£¬è¾°ã€ç™¸å·³
+        /// ä¸™åˆã€ä¸æœªã€æˆŠç”³ã€è¾›é…‰ã€å£¬æˆŒã€ç™¸äº¥
         /// </summary>
         private static bool IsYinYangChaCuo(HeavenStem dayStem, EarthBranch dayBranch)
         {
             var rules = new Dictionary<int, int[]>
             {
-                { 2, new[] { 0, 6 } },   // ±û¼û×Ó¡¢Îç
-                { 3, new[] { 1, 7 } },   // ¶¡¼û³ó¡¢Î´
-                { 4, new[] { 2, 8 } },   // Îì¼ûÒú¡¢Éê
-                { 7, new[] { 3, 9 } },   // ĞÁ¼ûÃ®¡¢ÓÏ
-                { 8, new[] { 4, 10 } },  // ÈÉ¼û³½¡¢Ğç
-                { 9, new[] { 5, 11 } }   // ¹ï¼ûËÈ¡¢º¥
+                { 2, new[] { 0, 6 } },   // ä¸™è§å­ã€åˆ
+                { 3, new[] { 1, 7 } },   // ä¸è§ä¸‘ã€æœª
+                { 4, new[] { 2, 8 } },   // æˆŠè§å¯…ã€ç”³
+                { 7, new[] { 3, 9 } },   // è¾›è§å¯ã€é…‰
+                { 8, new[] { 4, 10 } },  // å£¬è§è¾°ã€æˆŒ
+                { 9, new[] { 5, 11 } }   // ç™¸è§å·³ã€äº¥
             };
 
             return rules.ContainsKey(dayStem.Index) && rules[dayStem.Index].Contains(dayBranch.Index);
         }
 
         /// <summary>
-        /// ÌìÒÒ¹óÈË
-        /// ¼×Îì²¢Å£Ñò£¬ÒÒ¼ºÊóºïÏç£¬±û¶¡Öí¼¦Î»£¬ÈÉ¹ïÍÃÉß²Ø£¬¸ıĞÁ·ê»¢Âí
+        /// å¤©ä¹™è´µäºº
+        /// ç”²æˆŠå¹¶ç‰›ç¾Šï¼Œä¹™å·±é¼ çŒ´ä¹¡ï¼Œä¸™ä¸çŒªé¸¡ä½ï¼Œå£¬ç™¸å…”è›‡è—ï¼Œåºšè¾›é€¢è™é©¬
         /// </summary>
         private static bool IsTianYiGuiRen(HeavenStem stem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int[]>
             {
-                { 0, new[] { 1, 7 } },   // ¼×¼û³ó¡¢Î´
-                { 4, new[] { 1, 7 } },   // Îì¼û³ó¡¢Î´
-                { 1, new[] { 0, 8 } },   // ÒÒ¼û×Ó¡¢Éê
-                { 5, new[] { 0, 8 } },   // ¼º¼û×Ó¡¢Éê
-                { 2, new[] { 11, 9 } },  // ±û¼ûº¥¡¢ÓÏ
-                { 3, new[] { 11, 9 } },  // ¶¡¼ûº¥¡¢ÓÏ
-                { 8, new[] { 3, 5 } },   // ÈÉ¼ûÃ®¡¢ËÈ
-                { 9, new[] { 3, 5 } },   // ¹ï¼ûÃ®¡¢ËÈ
-                { 6, new[] { 2, 6 } },   // ¸ı¼ûÒú¡¢Îç
-                { 7, new[] { 2, 6 } }    // ĞÁ¼ûÒú¡¢Îç
+                { 0, new[] { 1, 7 } },   // ç”²è§ä¸‘ã€æœª
+                { 4, new[] { 1, 7 } },   // æˆŠè§ä¸‘ã€æœª
+                { 1, new[] { 0, 8 } },   // ä¹™è§å­ã€ç”³
+                { 5, new[] { 0, 8 } },   // å·±è§å­ã€ç”³
+                { 2, new[] { 11, 9 } },  // ä¸™è§äº¥ã€é…‰
+                { 3, new[] { 11, 9 } },  // ä¸è§äº¥ã€é…‰
+                { 8, new[] { 3, 5 } },   // å£¬è§å¯ã€å·³
+                { 9, new[] { 3, 5 } },   // ç™¸è§å¯ã€å·³
+                { 6, new[] { 2, 6 } },   // åºšè§å¯…ã€åˆ
+                { 7, new[] { 2, 6 } }    // è¾›è§å¯…ã€åˆ
             };
 
             return rules.ContainsKey(stem.Index) && rules[stem.Index].Contains(branch.Index);
         }
 
         /// <summary>
-        /// Ì«¼«¹óÈË
-        /// ¼×ÒÒÉúÈË×ÓÎçÖĞ£¬±û¶¡¼¦ÍÃ¶¨ºàÍ¨
-        /// Îì¼ºÁ½¸ÉÁÙËÄ¼¾£¬¸ıĞÁÒúº¥Â»·áÂ¡
-        /// ÈÉ¹ïËÈÉêÆ«Ï²ÃÀ
+        /// å¤ªæè´µäºº
+        /// ç”²ä¹™ç”Ÿäººå­åˆä¸­ï¼Œä¸™ä¸é¸¡å…”å®šäº¨é€š
+        /// æˆŠå·±ä¸¤å¹²ä¸´å››å­£ï¼Œåºšè¾›å¯…äº¥ç¦„ä¸°éš†
+        /// å£¬ç™¸å·³ç”³åå–œç¾
         /// </summary>
         private static bool IsTaiJiGuiRen(HeavenStem stem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int[]>
             {
-                { 0, new[] { 0, 6 } },   // ¼×¼û×Ó¡¢Îç
-                { 1, new[] { 0, 6 } },   // ÒÒ¼û×Ó¡¢Îç
-                { 2, new[] { 9, 3 } },   // ±û¼ûÓÏ¡¢Ã®
-                { 3, new[] { 9, 3 } },   // ¶¡¼ûÓÏ¡¢Ã®
-                { 6, new[] { 2, 11 } },  // ¸ı¼ûÒú¡¢º¥
-                { 7, new[] { 2, 11 } },  // ĞÁ¼ûÒú¡¢º¥
-                { 8, new[] { 5, 8 } },   // ÈÉ¼ûËÈ¡¢Éê
-                { 9, new[] { 5, 8 } }    // ¹ï¼ûËÈ¡¢Éê
+                { 0, new[] { 0, 6 } },   // ç”²è§å­ã€åˆ
+                { 1, new[] { 0, 6 } },   // ä¹™è§å­ã€åˆ
+                { 2, new[] { 9, 3 } },   // ä¸™è§é…‰ã€å¯
+                { 3, new[] { 9, 3 } },   // ä¸è§é…‰ã€å¯
+                { 6, new[] { 2, 11 } },  // åºšè§å¯…ã€äº¥
+                { 7, new[] { 2, 11 } },  // è¾›è§å¯…ã€äº¥
+                { 8, new[] { 5, 8 } },   // å£¬è§å·³ã€ç”³
+                { 9, new[] { 5, 8 } }    // ç™¸è§å·³ã€ç”³
             };
 
             if (rules.ContainsKey(stem.Index))
@@ -599,7 +591,7 @@ namespace tyme.culture
                 return rules[stem.Index].Contains(branch.Index);
             }
 
-            // Îì¼º¼ûËÄ¼¾£¨³½Ğç³óÎ´£©
+            // æˆŠå·±è§å››å­£ï¼ˆè¾°æˆŒä¸‘æœªï¼‰
             if ((stem.Index == 4 || stem.Index == 5) &&
                 new[] { 1, 4, 7, 10 }.Contains(branch.Index))
             {
@@ -610,115 +602,115 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÎÄ²ı¹óÈË
-        /// ¼×ÒÒËÈÎç±¨¾ıÖª£¬±ûÎìÉê¹¬¶¡¼º¼¦
-        /// ¸ıÖíĞÁÊóÈÉ·ê»¢£¬¹ïÈË¼ûÃ®ÈëÔÆÌİ
+        /// æ–‡æ˜Œè´µäºº
+        /// ç”²ä¹™å·³åˆæŠ¥å›çŸ¥ï¼Œä¸™æˆŠç”³å®«ä¸å·±é¸¡
+        /// åºšçŒªè¾›é¼ å£¬é€¢è™ï¼Œç™¸äººè§å¯å…¥äº‘æ¢¯
         /// </summary>
         private static bool IsWenChang(HeavenStem stem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 5 },  // ¼×¼ûËÈ
-                { 1, 6 },  // ÒÒ¼ûÎç
-                { 2, 8 },  // ±û¼ûÉê
-                { 4, 8 },  // Îì¼ûÉê
-                { 3, 9 },  // ¶¡¼ûÓÏ
-                { 5, 9 },  // ¼º¼ûÓÏ
-                { 6, 11 }, // ¸ı¼ûº¥
-                { 7, 0 },  // ĞÁ¼û×Ó
-                { 8, 2 },  // ÈÉ¼ûÒú
-                { 9, 3 }   // ¹ï¼ûÃ®
+                { 0, 5 },  // ç”²è§å·³
+                { 1, 6 },  // ä¹™è§åˆ
+                { 2, 8 },  // ä¸™è§ç”³
+                { 4, 8 },  // æˆŠè§ç”³
+                { 3, 9 },  // ä¸è§é…‰
+                { 5, 9 },  // å·±è§é…‰
+                { 6, 11 }, // åºšè§äº¥
+                { 7, 0 },  // è¾›è§å­
+                { 8, 2 },  // å£¬è§å¯…
+                { 9, 3 }   // ç™¸è§å¯
             };
 
             return rules.ContainsKey(stem.Index) && rules[stem.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ¿ıî¸¹óÈË
-        /// ÈÉ³½¸ıĞçÓë¸ı³½£¬ÎìĞç¿ıî¸ËÄ×ùÉñ
+        /// é­ç½¡è´µäºº
+        /// å£¬è¾°åºšæˆŒä¸åºšè¾°ï¼ŒæˆŠæˆŒé­ç½¡å››åº§ç¥
         /// </summary>
         private static bool IsKuiGang(HeavenStem dayStem, EarthBranch dayBranch)
         {
-            return (dayStem.Index == 8 && dayBranch.Index == 4) ||  // ÈÉ³½
-                   (dayStem.Index == 6 && dayBranch.Index == 10) || // ¸ıĞç
-                   (dayStem.Index == 6 && dayBranch.Index == 4) ||  // ¸ı³½
-                   (dayStem.Index == 4 && dayBranch.Index == 10);   // ÎìĞç
+            return (dayStem.Index == 8 && dayBranch.Index == 4) ||  // å£¬è¾°
+                   (dayStem.Index == 6 && dayBranch.Index == 10) || // åºšæˆŒ
+                   (dayStem.Index == 6 && dayBranch.Index == 4) ||  // åºšè¾°
+                   (dayStem.Index == 4 && dayBranch.Index == 10);   // æˆŠæˆŒ
         }
 
         /// <summary>
-        /// æäÂí
-        /// Éê×Ó³½ÂíÔÚÒú£¬ÒúÎçĞçÂíÔÚÉê£¬ËÈÓÏ³óÂíÔÚº¥£¬º¥Ã®Î´ÂíÔÚËÈ
+        /// é©¿é©¬
+        /// ç”³å­è¾°é©¬åœ¨å¯…ï¼Œå¯…åˆæˆŒé©¬åœ¨ç”³ï¼Œå·³é…‰ä¸‘é©¬åœ¨äº¥ï¼Œäº¥å¯æœªé©¬åœ¨å·³
         /// </summary>
         private static bool IsYiMa(EarthBranch baseBranch, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 8, 2 }, { 0, 2 }, { 4, 2 },   // Éê×Ó³½¼ûÒú
-                { 2, 8 }, { 6, 8 }, { 10, 8 },  // ÒúÎçĞç¼ûÉê
-                { 5, 11 }, { 9, 11 }, { 1, 11 },// ËÈÓÏ³ó¼ûº¥
-                { 11, 5 }, { 3, 5 }, { 7, 5 }   // º¥Ã®Î´¼ûËÈ
+                { 8, 2 }, { 0, 2 }, { 4, 2 },   // ç”³å­è¾°è§å¯…
+                { 2, 8 }, { 6, 8 }, { 10, 8 },  // å¯…åˆæˆŒè§ç”³
+                { 5, 11 }, { 9, 11 }, { 1, 11 },// å·³é…‰ä¸‘è§äº¥
+                { 11, 5 }, { 3, 5 }, { 7, 5 }   // äº¥å¯æœªè§å·³
             };
 
             return rules.ContainsKey(baseBranch.Index) && rules[baseBranch.Index] == branch.Index;
         }
 
         /// <summary>
-        /// »ª¸Ç
-        /// ÒúÎçĞç¼ûĞç£¬º¥Ã®Î´¼ûÎ´£¬Éê×Ó³½¼û³½£¬ËÈÓÏ³ó¼û³ó
+        /// åç›–
+        /// å¯…åˆæˆŒè§æˆŒï¼Œäº¥å¯æœªè§æœªï¼Œç”³å­è¾°è§è¾°ï¼Œå·³é…‰ä¸‘è§ä¸‘
         /// </summary>
         private static bool IsHuaGai(EarthBranch baseBranch, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 8, 4 }, { 0, 4 }, { 4, 4 },   // Éê×Ó³½¼û³½
-                { 2, 10 }, { 6, 10 }, { 10, 10 },// ÒúÎçĞç¼ûĞç
-                { 5, 1 }, { 9, 1 }, { 1, 1 },   // ËÈÓÏ³ó¼û³ó
-                { 11, 7 }, { 3, 7 }, { 7, 7 }   // º¥Ã®Î´¼ûÎ´
+                { 8, 4 }, { 0, 4 }, { 4, 4 },   // ç”³å­è¾°è§è¾°
+                { 2, 10 }, { 6, 10 }, { 10, 10 },// å¯…åˆæˆŒè§æˆŒ
+                { 5, 1 }, { 9, 1 }, { 1, 1 },   // å·³é…‰ä¸‘è§ä¸‘
+                { 11, 7 }, { 3, 7 }, { 7, 7 }   // äº¥å¯æœªè§æœª
             };
 
             return rules.ContainsKey(baseBranch.Index) && rules[baseBranch.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ½ğÓß
-        /// ¼×ÁúÒÒÉß±ûÎìÑò£¬¶¡¼ººï¸è¸ıÈ®·½
-        /// ĞÁÖíÈÉÅ£¹ï·ê»¢£¬·²ÈËÓö´Ë¸£Æø²ı
+        /// é‡‘èˆ†
+        /// ç”²é¾™ä¹™è›‡ä¸™æˆŠç¾Šï¼Œä¸å·±çŒ´æ­ŒåºšçŠ¬æ–¹
+        /// è¾›çŒªå£¬ç‰›ç™¸é€¢è™ï¼Œå‡¡äººé‡æ­¤ç¦æ°”æ˜Œ
         /// </summary>
         private static bool IsJinYu(HeavenStem stem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 4 },  // ¼×¼û³½
-                { 1, 5 },  // ÒÒ¼ûËÈ
-                { 2, 7 },  // ±û¼ûÎ´
-                { 4, 7 },  // Îì¼ûÎ´
-                { 3, 8 },  // ¶¡¼ûÉê
-                { 5, 8 },  // ¼º¼ûÉê
-                { 6, 10 }, // ¸ı¼ûĞç
-                { 7, 11 }, // ĞÁ¼ûº¥
-                { 8, 1 },  // ÈÉ¼û³ó
-                { 9, 2 }   // ¹ï¼ûÒú
+                { 0, 4 },  // ç”²è§è¾°
+                { 1, 5 },  // ä¹™è§å·³
+                { 2, 7 },  // ä¸™è§æœª
+                { 4, 7 },  // æˆŠè§æœª
+                { 3, 8 },  // ä¸è§ç”³
+                { 5, 8 },  // å·±è§ç”³
+                { 6, 10 }, // åºšè§æˆŒ
+                { 7, 11 }, // è¾›è§äº¥
+                { 8, 1 },  // å£¬è§ä¸‘
+                { 9, 2 }   // ç™¸è§å¯…
             };
 
             return rules.ContainsKey(stem.Index) && rules[stem.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ½ğÉñ
-        /// ÒÒ³ó¡¢¼ºËÈ¡¢¹ïÓÏ
+        /// é‡‘ç¥
+        /// ä¹™ä¸‘ã€å·±å·³ã€ç™¸é…‰
         /// </summary>
         private static bool IsJinShen(HeavenStem stem, EarthBranch branch)
         {
-            return (stem.Index == 1 && branch.Index == 1) ||  // ÒÒ³ó
-                   (stem.Index == 5 && branch.Index == 5) ||  // ¼ºËÈ
-                   (stem.Index == 9 && branch.Index == 9);    // ¹ïÓÏ
+            return (stem.Index == 1 && branch.Index == 1) ||  // ä¹™ä¸‘
+                   (stem.Index == 5 && branch.Index == 5) ||  // å·±å·³
+                   (stem.Index == 9 && branch.Index == 9);    // ç™¸é…‰
         }
 
         /// <summary>
-        /// Îå¹íĞÇ
-        /// ×ÓÔÂ¼û³½£¬³óÔÂ¼ûËÈ£¬ÒúÔÂ¼ûÎç£¬Ã®ÔÂ¼ûÎ´
-        /// ³½ÔÂ¼ûÉê£¬ËÈÔÂ¼ûÓÏ£¬ÎçÔÂ¼ûĞç£¬Î´ÔÂ¼ûº¥
-        /// ÉêÔÂ¼û×Ó£¬ÓÏÔÂ¼û³ó£¬ĞçÔÂ¼ûÒú£¬º¥ÔÂ¼ûÃ®
+        /// äº”é¬¼æ˜Ÿ
+        /// å­æœˆè§è¾°ï¼Œä¸‘æœˆè§å·³ï¼Œå¯…æœˆè§åˆï¼Œå¯æœˆè§æœª
+        /// è¾°æœˆè§ç”³ï¼Œå·³æœˆè§é…‰ï¼Œåˆæœˆè§æˆŒï¼Œæœªæœˆè§äº¥
+        /// ç”³æœˆè§å­ï¼Œé…‰æœˆè§ä¸‘ï¼ŒæˆŒæœˆè§å¯…ï¼Œäº¥æœˆè§å¯
         /// </summary>
         private static bool IsWuGui(EarthBranch monthBranch, EarthBranch branch)
         {
@@ -733,64 +725,64 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ¹úÓ¡¹óÈË
-        /// ¼×¼ûĞç£¬ÒÒ¼ûº¥£¬±û¼û³ó£¬¶¡¼ûÒú£¬Îì¼û³ó
-        /// ¼º¼ûÒú£¬¸ı¼û³½£¬ĞÁ¼ûËÈ£¬ÈÉ¼ûÎ´£¬¹ï¼ûÉê
+        /// å›½å°è´µäºº
+        /// ç”²è§æˆŒï¼Œä¹™è§äº¥ï¼Œä¸™è§ä¸‘ï¼Œä¸è§å¯…ï¼ŒæˆŠè§ä¸‘
+        /// å·±è§å¯…ï¼Œåºšè§è¾°ï¼Œè¾›è§å·³ï¼Œå£¬è§æœªï¼Œç™¸è§ç”³
         /// </summary>
         private static bool IsGuoYin(HeavenStem stem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 10 }, // ¼×¼ûĞç
-                { 1, 11 }, // ÒÒ¼ûº¥
-                { 2, 1 },  // ±û¼û³ó
-                { 3, 2 },  // ¶¡¼ûÒú
-                { 4, 1 },  // Îì¼û³ó
-                { 5, 2 },  // ¼º¼ûÒú
-                { 6, 4 },  // ¸ı¼û³½
-                { 7, 5 },  // ĞÁ¼ûËÈ
-                { 8, 7 },  // ÈÉ¼ûÎ´
-                { 9, 8 }   // ¹ï¼ûÉê
+                { 0, 10 }, // ç”²è§æˆŒ
+                { 1, 11 }, // ä¹™è§äº¥
+                { 2, 1 },  // ä¸™è§ä¸‘
+                { 3, 2 },  // ä¸è§å¯…
+                { 4, 1 },  // æˆŠè§ä¸‘
+                { 5, 2 },  // å·±è§å¯…
+                { 6, 4 },  // åºšè§è¾°
+                { 7, 5 },  // è¾›è§å·³
+                { 8, 7 },  // å£¬è§æœª
+                { 9, 8 }   // ç™¸è§ç”³
             };
 
             return rules.ContainsKey(stem.Index) && rules[stem.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ½«ĞÇ
-        /// ÒúÎçĞç¼ûÎç£¬ËÈÓÏ³ó¼ûÓÏ£¬Éê×Ó³½¼û×Ó£¬º¥Ã®Î´¼ûÃ®
+        /// å°†æ˜Ÿ
+        /// å¯…åˆæˆŒè§åˆï¼Œå·³é…‰ä¸‘è§é…‰ï¼Œç”³å­è¾°è§å­ï¼Œäº¥å¯æœªè§å¯
         /// </summary>
         private static bool IsJiangXing(EarthBranch baseBranch, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 8, 0 }, { 0, 0 }, { 4, 0 },   // Éê×Ó³½¼û×Ó
-                { 2, 6 }, { 6, 6 }, { 10, 6 },  // ÒúÎçĞç¼ûÎç
-                { 5, 9 }, { 9, 9 }, { 1, 9 },   // ËÈÓÏ³ó¼ûÓÏ
-                { 11, 3 }, { 3, 3 }, { 7, 3 }   // º¥Ã®Î´¼ûÃ®
+                { 8, 0 }, { 0, 0 }, { 4, 0 },   // ç”³å­è¾°è§å­
+                { 2, 6 }, { 6, 6 }, { 10, 6 },  // å¯…åˆæˆŒè§åˆ
+                { 5, 9 }, { 9, 9 }, { 1, 9 },   // å·³é…‰ä¸‘è§é…‰
+                { 11, 3 }, { 3, 3 }, { 7, 3 }   // äº¥å¯æœªè§å¯
             };
 
             return rules.ContainsKey(baseBranch.Index) && rules[baseBranch.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ¹Âğ½É·
-        /// ¼×Òú¡¢ÒÒËÈ¡¢±ûÎç¡¢¶¡ËÈ¡¢ÎìÎç¡¢ÎìÉê¡¢ĞÁº¥¡¢ÈÉ×Ó
+        /// å­¤é¸¾ç…
+        /// ç”²å¯…ã€ä¹™å·³ã€ä¸™åˆã€ä¸å·³ã€æˆŠåˆã€æˆŠç”³ã€è¾›äº¥ã€å£¬å­
         /// </summary>
         private static bool IsGuLuan(HeavenStem dayStem, EarthBranch dayBranch)
         {
-            return (dayStem.Index == 0 && dayBranch.Index == 2) ||  // ¼×Òú
-                   (dayStem.Index == 1 && dayBranch.Index == 5) ||  // ÒÒËÈ
-                   (dayStem.Index == 2 && dayBranch.Index == 6) ||  // ±ûÎç
-                   (dayStem.Index == 3 && dayBranch.Index == 5) ||  // ¶¡ËÈ
-                   (dayStem.Index == 4 && dayBranch.Index == 6) ||  // ÎìÎç
-                   (dayStem.Index == 4 && dayBranch.Index == 8) ||  // ÎìÉê
-                   (dayStem.Index == 7 && dayBranch.Index == 11) || // ĞÁº¥
-                   (dayStem.Index == 8 && dayBranch.Index == 0);    // ÈÉ×Ó
+            return (dayStem.Index == 0 && dayBranch.Index == 2) ||  // ç”²å¯…
+                   (dayStem.Index == 1 && dayBranch.Index == 5) ||  // ä¹™å·³
+                   (dayStem.Index == 2 && dayBranch.Index == 6) ||  // ä¸™åˆ
+                   (dayStem.Index == 3 && dayBranch.Index == 5) ||  // ä¸å·³
+                   (dayStem.Index == 4 && dayBranch.Index == 6) ||  // æˆŠåˆ
+                   (dayStem.Index == 4 && dayBranch.Index == 8) ||  // æˆŠç”³
+                   (dayStem.Index == 7 && dayBranch.Index == 11) || // è¾›äº¥
+                   (dayStem.Index == 8 && dayBranch.Index == 0);    // å£¬å­
         }
 
         /// <summary>
-        /// É¥ÃÅ
+        /// ä¸§é—¨
         /// </summary>
         private static bool IsSangMen(EarthBranch yearBranch, EarthBranch branch)
         {
@@ -798,7 +790,7 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// µõ¿Í
+        /// åŠå®¢
         /// </summary>
         private static bool IsDiaoKe(EarthBranch yearBranch, EarthBranch branch)
         {
@@ -806,7 +798,7 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÅûÂé
+        /// æŠ«éº»
         /// </summary>
         private static bool IsPiMa(EarthBranch yearBranch, EarthBranch branch)
         {
@@ -814,61 +806,60 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ¹ØÏµ²éÑ¯Í¨ÓÃ·½·¨
+        /// å…³ç³»æŸ¥è¯¢é€šç”¨æ–¹æ³•
         /// </summary>
         private static bool CheckRelation(EarthBranch yearBranch, EarthBranch branch, string[] targetArray)
         {
-            var index = Array.IndexOf(EARTH_BRANCHES, yearBranch.GetName());
-            if (index == -1) return false;
-            return targetArray[index] == branch.GetName();
+            if (yearBranch.Index == -1) return false;
+            return targetArray[yearBranch.Index] == branch.GetName();
         }
 
         /// <summary>
-        /// ÌìµÂ¹óÈË
-        /// ÕıÔÂ¼û¶¡£¬¶şÔÂ¼ûÉê£¬ÈıÔÂ¼ûÈÉ£¬ËÄÔÂ¼ûĞÁ
-        /// ÎåÔÂ¼ûº¥£¬ÁùÔÂ¼û¼×£¬ÆßÔÂ¼û¹ï£¬°ËÔÂ¼ûÒú
-        /// ¾ÅÔÂ¼û±û£¬Ê®ÔÂ¼ûÒÒ£¬Ê®Ò»ÔÂ¼ûËÈ£¬Ê®¶şÔÂ¼û¸ı
+        /// å¤©å¾·è´µäºº
+        /// æ­£æœˆè§ä¸ï¼ŒäºŒæœˆè§ç”³ï¼Œä¸‰æœˆè§å£¬ï¼Œå››æœˆè§è¾›
+        /// äº”æœˆè§äº¥ï¼Œå…­æœˆè§ç”²ï¼Œä¸ƒæœˆè§ç™¸ï¼Œå…«æœˆè§å¯…
+        /// ä¹æœˆè§ä¸™ï¼Œåæœˆè§ä¹™ï¼Œåä¸€æœˆè§å·³ï¼ŒåäºŒæœˆè§åºš
         /// </summary>
         private static bool IsTianDeGuiRen(EarthBranch monthBranch, HeavenStem stem)
         {
             var rules = new Dictionary<int, int>
             {
-                { 2, 3 },  // ÒúÔÂ¼û¶¡
-                { 3, 8 },  // Ã®ÔÂ¼ûÉê£¨µØÖ§£©
-                { 4, 8 },  // ³½ÔÂ¼ûÈÉ
-                { 5, 7 },  // ËÈÔÂ¼ûĞÁ
-                { 6, 11 }, // ÎçÔÂ¼ûº¥£¨µØÖ§£©
-                { 7, 0 },  // Î´ÔÂ¼û¼×
-                { 8, 9 },  // ÉêÔÂ¼û¹ï
-                { 9, 2 },  // ÓÏÔÂ¼ûÒú£¨µØÖ§£©
-                { 10, 2 }, // ĞçÔÂ¼û±û
-                { 11, 1 }, // º¥ÔÂ¼ûÒÒ
-                { 0, 5 },  // ×ÓÔÂ¼ûËÈ£¨µØÖ§£©
-                { 1, 6 }   // ³óÔÂ¼û¸ı
+                { 2, 3 },  // å¯…æœˆè§ä¸
+                { 3, 8 },  // å¯æœˆè§ç”³ï¼ˆåœ°æ”¯ï¼‰
+                { 4, 8 },  // è¾°æœˆè§å£¬
+                { 5, 7 },  // å·³æœˆè§è¾›
+                { 6, 11 }, // åˆæœˆè§äº¥ï¼ˆåœ°æ”¯ï¼‰
+                { 7, 0 },  // æœªæœˆè§ç”²
+                { 8, 9 },  // ç”³æœˆè§ç™¸
+                { 9, 2 },  // é…‰æœˆè§å¯…ï¼ˆåœ°æ”¯ï¼‰
+                { 10, 2 }, // æˆŒæœˆè§ä¸™
+                { 11, 1 }, // äº¥æœˆè§ä¹™
+                { 0, 5 },  // å­æœˆè§å·³ï¼ˆåœ°æ”¯ï¼‰
+                { 1, 6 }   // ä¸‘æœˆè§åºš
             };
 
             return rules.ContainsKey(monthBranch.Index) && rules[monthBranch.Index] == stem.Index;
         }
 
         /// <summary>
-        /// ÌìµÂ¹óÈË£¨µØÖ§°æ±¾£©
+        /// å¤©å¾·è´µäººï¼ˆåœ°æ”¯ç‰ˆæœ¬ï¼‰
         /// </summary>
         private static bool IsTianDeGuiRen(EarthBranch monthBranch, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 3, 8 },  // Ã®ÔÂ¼ûÉê
-                { 6, 11 }, // ÎçÔÂ¼ûº¥
-                { 9, 2 },  // ÓÏÔÂ¼ûÒú
-                { 0, 5 }   // ×ÓÔÂ¼ûËÈ
+                { 3, 8 },  // å¯æœˆè§ç”³
+                { 6, 11 }, // åˆæœˆè§äº¥
+                { 9, 2 },  // é…‰æœˆè§å¯…
+                { 0, 5 }   // å­æœˆè§å·³
             };
 
             return rules.ContainsKey(monthBranch.Index) && rules[monthBranch.Index] == branch.Index;
         }
 
         /// <summary>
-        /// Ôª³½
-        /// ÑôÄĞÒõÅ®ÓëÒõÄĞÑôÅ®²é·¨²»Í¬
+        /// å…ƒè¾°
+        /// é˜³ç”·é˜´å¥³ä¸é˜´ç”·é˜³å¥³æŸ¥æ³•ä¸åŒ
         /// </summary>
         private static bool IsYuanChen(EarthBranch yearBranch, EarthBranch branch, bool isMale, bool isYangStem)
         {
@@ -893,47 +884,47 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÔÂµÂ¹óÈË
-        /// ÒúÎçĞçÔÂ¼û±û£¬Éê×Ó³½ÔÂ¼ûÈÉ£¬º¥Ã®Î´ÔÂ¼û¼×£¬ËÈÓÏ³óÔÂ¼û¸ı
+        /// æœˆå¾·è´µäºº
+        /// å¯…åˆæˆŒæœˆè§ä¸™ï¼Œç”³å­è¾°æœˆè§å£¬ï¼Œäº¥å¯æœªæœˆè§ç”²ï¼Œå·³é…‰ä¸‘æœˆè§åºš
         /// </summary>
         private static bool IsYueDe(EarthBranch monthBranch, HeavenStem stem)
         {
             var rules = new Dictionary<int, int>
             {
-                { 2, 2 }, { 6, 2 }, { 10, 2 },  // ÒúÎçĞç¼û±û
-                { 8, 8 }, { 0, 8 }, { 4, 8 },   // Éê×Ó³½¼ûÈÉ
-                { 11, 0 }, { 3, 0 }, { 7, 0 },  // º¥Ã®Î´¼û¼×
-                { 5, 6 }, { 9, 6 }, { 1, 6 }    // ËÈÓÏ³ó¼û¸ı
+                { 2, 2 }, { 6, 2 }, { 10, 2 },  // å¯…åˆæˆŒè§ä¸™
+                { 8, 8 }, { 0, 8 }, { 4, 8 },   // ç”³å­è¾°è§å£¬
+                { 11, 0 }, { 3, 0 }, { 7, 0 },  // äº¥å¯æœªè§ç”²
+                { 5, 6 }, { 9, 6 }, { 1, 6 }    // å·³é…‰ä¸‘è§åºš
             };
 
             return rules.ContainsKey(monthBranch.Index) && rules[monthBranch.Index] == stem.Index;
         }
 
         /// <summary>
-        /// ÌìÉâ
-        /// ´ºÎìÒú£¬ÏÄ¼×Îç£¬ÇïÎìÉê£¬¶¬¼××Ó
+        /// å¤©èµ¦
+        /// æ˜¥æˆŠå¯…ï¼Œå¤ç”²åˆï¼Œç§‹æˆŠç”³ï¼Œå†¬ç”²å­
         /// </summary>
         private static bool IsTianShe(EarthBranch monthBranch, HeavenStem dayStem, EarthBranch dayBranch)
         {
-            // ´º¼¾£ºÒúÃ®³½ÔÂÉúÎìÒúÈÕ
+            // æ˜¥å­£ï¼šå¯…å¯è¾°æœˆç”ŸæˆŠå¯…æ—¥
             if (new[] { 2, 3, 4 }.Contains(monthBranch.Index))
             {
                 return dayStem.Index == 4 && dayBranch.Index == 2;
             }
 
-            // ÏÄ¼¾£ºËÈÎçÎ´ÔÂÉú¼×ÎçÈÕ
+            // å¤å­£ï¼šå·³åˆæœªæœˆç”Ÿç”²åˆæ—¥
             if (new[] { 5, 6, 7 }.Contains(monthBranch.Index))
             {
                 return dayStem.Index == 0 && dayBranch.Index == 6;
             }
 
-            // Çï¼¾£ºÉêÓÏĞçÔÂÉúÎìÉêÈÕ
+            // ç§‹å­£ï¼šç”³é…‰æˆŒæœˆç”ŸæˆŠç”³æ—¥
             if (new[] { 8, 9, 10 }.Contains(monthBranch.Index))
             {
                 return dayStem.Index == 4 && dayBranch.Index == 8;
             }
 
-            // ¶¬¼¾£ºº¥×Ó³óÔÂÉú¼××ÓÈÕ
+            // å†¬å­£ï¼šäº¥å­ä¸‘æœˆç”Ÿç”²å­æ—¥
             if (new[] { 11, 0, 1 }.Contains(monthBranch.Index))
             {
                 return dayStem.Index == 0 && dayBranch.Index == 0;
@@ -943,25 +934,25 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ËÄ·Ï
-        /// ´º¸ıÉêĞÁÓÏ£¬ÏÄÈÉ×Ó¹ïº¥£¬Çï¼×ÒúÒÒÃ®£¬¶¬±ûÎç¶¡ËÈ
+        /// å››åºŸ
+        /// æ˜¥åºšç”³è¾›é…‰ï¼Œå¤å£¬å­ç™¸äº¥ï¼Œç§‹ç”²å¯…ä¹™å¯ï¼Œå†¬ä¸™åˆä¸å·³
         /// </summary>
         private static bool IsSiFei(EarthBranch monthBranch, HeavenStem dayStem, EarthBranch dayBranch)
         {
             var rules = new Dictionary<int, string[]>
             {
-                { 2, new[] { "¸ıÉê", "ĞÁÓÏ" } },  // ´º¼¾
-                { 3, new[] { "¸ıÉê", "ĞÁÓÏ" } },
-                { 4, new[] { "¸ıÉê", "ĞÁÓÏ" } },
-                { 5, new[] { "ÈÉ×Ó", "¹ïº¥" } },  // ÏÄ¼¾
-                { 6, new[] { "ÈÉ×Ó", "¹ïº¥" } },
-                { 7, new[] { "ÈÉ×Ó", "¹ïº¥" } },
-                { 8, new[] { "¼×Òú", "ÒÒÃ®" } },  // Çï¼¾
-                { 9, new[] { "¼×Òú", "ÒÒÃ®" } },
-                { 10, new[] { "¼×Òú", "ÒÒÃ®" } },
-                { 11, new[] { "±ûÎç", "¶¡ËÈ" } }, // ¶¬¼¾
-                { 0, new[] { "±ûÎç", "¶¡ËÈ" } },
-                { 1, new[] { "±ûÎç", "¶¡ËÈ" } }
+                { 2, new[] { "åºšç”³", "è¾›é…‰" } },  // æ˜¥å­£
+                { 3, new[] { "åºšç”³", "è¾›é…‰" } },
+                { 4, new[] { "åºšç”³", "è¾›é…‰" } },
+                { 5, new[] { "å£¬å­", "ç™¸äº¥" } },  // å¤å­£
+                { 6, new[] { "å£¬å­", "ç™¸äº¥" } },
+                { 7, new[] { "å£¬å­", "ç™¸äº¥" } },
+                { 8, new[] { "ç”²å¯…", "ä¹™å¯" } },  // ç§‹å­£
+                { 9, new[] { "ç”²å¯…", "ä¹™å¯" } },
+                { 10, new[] { "ç”²å¯…", "ä¹™å¯" } },
+                { 11, new[] { "ä¸™åˆ", "ä¸å·³" } }, // å†¬å­£
+                { 0, new[] { "ä¸™åˆ", "ä¸å·³" } },
+                { 1, new[] { "ä¸™åˆ", "ä¸å·³" } }
             };
 
             if (!rules.ContainsKey(monthBranch.Index)) return false;
@@ -971,8 +962,8 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÌìÒ½
-        /// ÕıÔÂ¼û³ó£¬¶şÔÂ¼ûÒú£¬ÈıÔÂ¼ûÃ®...£¨Ë³ÊıÏÂÒ»Î»£©
+        /// å¤©åŒ»
+        /// æ­£æœˆè§ä¸‘ï¼ŒäºŒæœˆè§å¯…ï¼Œä¸‰æœˆè§å¯...ï¼ˆé¡ºæ•°ä¸‹ä¸€ä½ï¼‰
         /// </summary>
         private static bool IsTianYi(EarthBranch monthBranch, EarthBranch branch)
         {
@@ -981,32 +972,32 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// Â»Éñ
-        /// ¼×Â»ÔÚÒú£¬ÒÒÂ»ÔÚÃ®£¬±ûÎìÂ»ÔÚËÈ£¬¶¡¼ºÂ»ÔÚÎç
-        /// ¸ıÂ»ÔÚÉê£¬ĞÁÂ»ÔÚÓÏ£¬ÈÉÂ»ÔÚº¥£¬¹ïÂ»ÔÚ×Ó
+        /// ç¦„ç¥
+        /// ç”²ç¦„åœ¨å¯…ï¼Œä¹™ç¦„åœ¨å¯ï¼Œä¸™æˆŠç¦„åœ¨å·³ï¼Œä¸å·±ç¦„åœ¨åˆ
+        /// åºšç¦„åœ¨ç”³ï¼Œè¾›ç¦„åœ¨é…‰ï¼Œå£¬ç¦„åœ¨äº¥ï¼Œç™¸ç¦„åœ¨å­
         /// </summary>
         private static bool IsLuShen(HeavenStem stem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 2 },  // ¼×Â»ÔÚÒú
-                { 1, 3 },  // ÒÒÂ»ÔÚÃ®
-                { 2, 5 },  // ±ûÂ»ÔÚËÈ
-                { 3, 6 },  // ¶¡Â»ÔÚÎç
-                { 4, 5 },  // ÎìÂ»ÔÚËÈ
-                { 5, 6 },  // ¼ºÂ»ÔÚÎç
-                { 6, 8 },  // ¸ıÂ»ÔÚÉê
-                { 7, 9 },  // ĞÁÂ»ÔÚÓÏ
-                { 8, 11 }, // ÈÉÂ»ÔÚº¥
-                { 9, 0 }   // ¹ïÂ»ÔÚ×Ó
+                { 0, 2 },  // ç”²ç¦„åœ¨å¯…
+                { 1, 3 },  // ä¹™ç¦„åœ¨å¯
+                { 2, 5 },  // ä¸™ç¦„åœ¨å·³
+                { 3, 6 },  // ä¸ç¦„åœ¨åˆ
+                { 4, 5 },  // æˆŠç¦„åœ¨å·³
+                { 5, 6 },  // å·±ç¦„åœ¨åˆ
+                { 6, 8 },  // åºšç¦„åœ¨ç”³
+                { 7, 9 },  // è¾›ç¦„åœ¨é…‰
+                { 8, 11 }, // å£¬ç¦„åœ¨äº¥
+                { 9, 0 }   // ç™¸ç¦„åœ¨å­
             };
 
             return rules.ContainsKey(stem.Index) && rules[stem.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ºìğ½
-        /// ×ÓÄêÃ®£¬³óÄêÒú£¬ÒúÄê³ó£¬Ã®Äê×Ó...
+        /// çº¢é¸¾
+        /// å­å¹´å¯ï¼Œä¸‘å¹´å¯…ï¼Œå¯…å¹´ä¸‘ï¼Œå¯å¹´å­...
         /// </summary>
         private static bool IsHongLuan(EarthBranch yearBranch, EarthBranch branch)
         {
@@ -1021,8 +1012,8 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÌìÏ²£¨ºìğ½¶Ô¹¬£©
-        /// ×ÓÄêÓÏ£¬³óÄêÉê£¬ÒúÄêÎ´£¬Ã®ÄêÎç...
+        /// å¤©å–œï¼ˆçº¢é¸¾å¯¹å®«ï¼‰
+        /// å­å¹´é…‰ï¼Œä¸‘å¹´ç”³ï¼Œå¯…å¹´æœªï¼Œå¯å¹´åˆ...
         /// </summary>
         private static bool IsTianXi(EarthBranch yearBranch, EarthBranch branch)
         {
@@ -1037,8 +1028,8 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÌìÂŞ
-        /// Ğç¼ûº¥£¬º¥¼ûĞç
+        /// å¤©ç½—
+        /// æˆŒè§äº¥ï¼Œäº¥è§æˆŒ
         /// </summary>
         private static bool IsTianLuo(EarthBranch baseBranch, EarthBranch branch)
         {
@@ -1047,8 +1038,8 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// µØÍø
-        /// ³½¼ûËÈ£¬ËÈ¼û³½
+        /// åœ°ç½‘
+        /// è¾°è§å·³ï¼Œå·³è§è¾°
         /// </summary>
         private static bool IsDiWang(EarthBranch baseBranch, EarthBranch branch)
         {
@@ -1057,186 +1048,186 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÑòÈĞ
-        /// ¼×ÈĞÔÚÃ®£¬ÒÒÈĞÔÚÒú£¬±ûÎìÈĞÔÚÎç£¬¶¡¼ºÈĞÔÚËÈ
-        /// ¸ıÈĞÔÚÓÏ£¬ĞÁÈĞÔÚÉê£¬ÈÉÈĞÔÚ×Ó£¬¹ïÈĞÔÚº¥
+        /// ç¾Šåˆƒ
+        /// ç”²åˆƒåœ¨å¯ï¼Œä¹™åˆƒåœ¨å¯…ï¼Œä¸™æˆŠåˆƒåœ¨åˆï¼Œä¸å·±åˆƒåœ¨å·³
+        /// åºšåˆƒåœ¨é…‰ï¼Œè¾›åˆƒåœ¨ç”³ï¼Œå£¬åˆƒåœ¨å­ï¼Œç™¸åˆƒåœ¨äº¥
         /// </summary>
         private static bool IsYangRen(HeavenStem stem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 3 },  // ¼×ÈĞÔÚÃ®
-                { 1, 2 },  // ÒÒÈĞÔÚÒú
-                { 2, 6 },  // ±ûÈĞÔÚÎç
-                { 3, 5 },  // ¶¡ÈĞÔÚËÈ
-                { 4, 6 },  // ÎìÈĞÔÚÎç
-                { 5, 5 },  // ¼ºÈĞÔÚËÈ
-                { 6, 9 },  // ¸ıÈĞÔÚÓÏ
-                { 7, 8 },  // ĞÁÈĞÔÚÉê
-                { 8, 0 },  // ÈÉÈĞÔÚ×Ó
-                { 9, 11 }  // ¹ïÈĞÔÚº¥
+                { 0, 3 },  // ç”²åˆƒåœ¨å¯
+                { 1, 2 },  // ä¹™åˆƒåœ¨å¯…
+                { 2, 6 },  // ä¸™åˆƒåœ¨åˆ
+                { 3, 5 },  // ä¸åˆƒåœ¨å·³
+                { 4, 6 },  // æˆŠåˆƒåœ¨åˆ
+                { 5, 5 },  // å·±åˆƒåœ¨å·³
+                { 6, 9 },  // åºšåˆƒåœ¨é…‰
+                { 7, 8 },  // è¾›åˆƒåœ¨ç”³
+                { 8, 0 },  // å£¬åˆƒåœ¨å­
+                { 9, 11 }  // ç™¸åˆƒåœ¨äº¥
             };
 
             return rules.ContainsKey(stem.Index) && rules[stem.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ·ÉÈĞ£¨ÑòÈĞµÄÁù³å£©
+        /// é£åˆƒï¼ˆç¾Šåˆƒçš„å…­å†²ï¼‰
         /// </summary>
         private static bool IsFeiRen(HeavenStem stem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 9 },  // ¼×¼ûÓÏ
-                { 1, 8 },  // ÒÒ¼ûÉê
-                { 2, 0 },  // ±û¼û×Ó
-                { 4, 0 },  // Îì¼û×Ó
-                { 3, 1 },  // ¶¡¼û³ó
-                { 5, 1 },  // ¼º¼û³ó
-                { 6, 3 },  // ¸ı¼ûÃ®
-                { 7, 4 },  // ĞÁ¼û³½
-                { 8, 6 },  // ÈÉ¼ûÎç
-                { 9, 7 }   // ¹ï¼ûÎ´
+                { 0, 9 },  // ç”²è§é…‰
+                { 1, 8 },  // ä¹™è§ç”³
+                { 2, 0 },  // ä¸™è§å­
+                { 4, 0 },  // æˆŠè§å­
+                { 3, 1 },  // ä¸è§ä¸‘
+                { 5, 1 },  // å·±è§ä¸‘
+                { 6, 3 },  // åºšè§å¯
+                { 7, 4 },  // è¾›è§è¾°
+                { 8, 6 },  // å£¬è§åˆ
+                { 9, 7 }   // ç™¸è§æœª
             };
 
             return rules.ContainsKey(stem.Index) && rules[stem.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ½ÙÉ·
-        /// Éê×Ó³½¼ûËÈ£¬º¥Ã®Î´¼ûÉê£¬ÒúÎçĞç¼ûº¥£¬ËÈÓÏ³ó¼ûÒú
+        /// åŠ«ç…
+        /// ç”³å­è¾°è§å·³ï¼Œäº¥å¯æœªè§ç”³ï¼Œå¯…åˆæˆŒè§äº¥ï¼Œå·³é…‰ä¸‘è§å¯…
         /// </summary>
         private static bool IsJieSha(EarthBranch baseBranch, EarthBranch branch)
         {
-            if (branch.Index == 11) // º¥
-                return new[] { 2, 6, 10 }.Contains(baseBranch.Index); // ÒúÎçĞç
-            if (branch.Index == 5) // ËÈ
-                return new[] { 8, 0, 4 }.Contains(baseBranch.Index); // Éê×Ó³½
-            if (branch.Index == 2) // Òú
-                return new[] { 5, 9, 1 }.Contains(baseBranch.Index); // ËÈÓÏ³ó
-            if (branch.Index == 8) // Éê
-                return new[] { 11, 3, 7 }.Contains(baseBranch.Index); // º¥Ã®Î´
+            if (branch.Index == 11) // äº¥
+                return new[] { 2, 6, 10 }.Contains(baseBranch.Index); // å¯…åˆæˆŒ
+            if (branch.Index == 5) // å·³
+                return new[] { 8, 0, 4 }.Contains(baseBranch.Index); // ç”³å­è¾°
+            if (branch.Index == 2) // å¯…
+                return new[] { 5, 9, 1 }.Contains(baseBranch.Index); // å·³é…‰ä¸‘
+            if (branch.Index == 8) // ç”³
+                return new[] { 11, 3, 7 }.Contains(baseBranch.Index); // äº¥å¯æœª
 
             return false;
         }
 
         /// <summary>
-        /// ÔÖÉ·
-        /// Éê×Ó³½¼ûÎç£¬º¥Ã®Î´¼ûÓÏ£¬ÒúÎçĞç¼û×Ó£¬ËÈÓÏ³ó¼ûÃ®
+        /// ç¾ç…
+        /// ç”³å­è¾°è§åˆï¼Œäº¥å¯æœªè§é…‰ï¼Œå¯…åˆæˆŒè§å­ï¼Œå·³é…‰ä¸‘è§å¯
         /// </summary>
         private static bool IsZaiSha(EarthBranch yearBranch, EarthBranch branch)
         {
-            if (branch.Index == 6) // Îç
-                return new[] { 8, 0, 4 }.Contains(yearBranch.Index); // Éê×Ó³½
-            if (branch.Index == 0) // ×Ó
-                return new[] { 2, 6, 10 }.Contains(yearBranch.Index); // ÒúÎçĞç
-            if (branch.Index == 3) // Ã®
-                return new[] { 5, 9, 1 }.Contains(yearBranch.Index); // ËÈÓÏ³ó
-            if (branch.Index == 9) // ÓÏ
-                return new[] { 11, 3, 7 }.Contains(yearBranch.Index); // º¥Ã®Î´
+            if (branch.Index == 6) // åˆ
+                return new[] { 8, 0, 4 }.Contains(yearBranch.Index); // ç”³å­è¾°
+            if (branch.Index == 0) // å­
+                return new[] { 2, 6, 10 }.Contains(yearBranch.Index); // å¯…åˆæˆŒ
+            if (branch.Index == 3) // å¯
+                return new[] { 5, 9, 1 }.Contains(yearBranch.Index); // å·³é…‰ä¸‘
+            if (branch.Index == 9) // é…‰
+                return new[] { 11, 3, 7 }.Contains(yearBranch.Index); // äº¥å¯æœª
 
             return false;
         }
 
         /// <summary>
-        /// ¹Â³½
-        /// º¥×Ó³ó¼ûÒú£¬ÒúÃ®³½¼ûËÈ£¬ËÈÎçÎ´¼ûÉê£¬ÉêÓÏĞç¼ûº¥
+        /// å­¤è¾°
+        /// äº¥å­ä¸‘è§å¯…ï¼Œå¯…å¯è¾°è§å·³ï¼Œå·³åˆæœªè§ç”³ï¼Œç”³é…‰æˆŒè§äº¥
         /// </summary>
         private static bool IsGuChen(EarthBranch yearBranch, EarthBranch branch)
         {
-            if (branch.Index == 2) // Òú
-                return new[] { 11, 0, 1 }.Contains(yearBranch.Index); // º¥×Ó³ó
-            if (branch.Index == 5) // ËÈ
-                return new[] { 2, 3, 4 }.Contains(yearBranch.Index); // ÒúÃ®³½
-            if (branch.Index == 8) // Éê
-                return new[] { 5, 6, 7 }.Contains(yearBranch.Index); // ËÈÎçÎ´
-            if (branch.Index == 11) // º¥
-                return new[] { 8, 9, 10 }.Contains(yearBranch.Index); // ÉêÓÏĞç
+            if (branch.Index == 2) // å¯…
+                return new[] { 11, 0, 1 }.Contains(yearBranch.Index); // äº¥å­ä¸‘
+            if (branch.Index == 5) // å·³
+                return new[] { 2, 3, 4 }.Contains(yearBranch.Index); // å¯…å¯è¾°
+            if (branch.Index == 8) // ç”³
+                return new[] { 5, 6, 7 }.Contains(yearBranch.Index); // å·³åˆæœª
+            if (branch.Index == 11) // äº¥
+                return new[] { 8, 9, 10 }.Contains(yearBranch.Index); // ç”³é…‰æˆŒ
 
             return false;
         }
 
         /// <summary>
-        /// ¹ÑËŞ
-        /// º¥×Ó³ó¼ûĞç£¬ÒúÃ®³½¼û³ó£¬ËÈÎçÎ´¼û³½£¬ÉêÓÏĞç¼ûÎ´
+        /// å¯¡å®¿
+        /// äº¥å­ä¸‘è§æˆŒï¼Œå¯…å¯è¾°è§ä¸‘ï¼Œå·³åˆæœªè§è¾°ï¼Œç”³é…‰æˆŒè§æœª
         /// </summary>
         private static bool IsGuaSu(EarthBranch yearBranch, EarthBranch branch)
         {
-            if (branch.Index == 10) // Ğç
-                return new[] { 11, 0, 1 }.Contains(yearBranch.Index); // º¥×Ó³ó
-            if (branch.Index == 1) // ³ó
-                return new[] { 2, 3, 4 }.Contains(yearBranch.Index); // ÒúÃ®³½
-            if (branch.Index == 4) // ³½
-                return new[] { 5, 6, 7 }.Contains(yearBranch.Index); // ËÈÎçÎ´
-            if (branch.Index == 7) // Î´
-                return new[] { 8, 9, 10 }.Contains(yearBranch.Index); // ÉêÓÏĞç
+            if (branch.Index == 10) // æˆŒ
+                return new[] { 11, 0, 1 }.Contains(yearBranch.Index); // äº¥å­ä¸‘
+            if (branch.Index == 1) // ä¸‘
+                return new[] { 2, 3, 4 }.Contains(yearBranch.Index); // å¯…å¯è¾°
+            if (branch.Index == 4) // è¾°
+                return new[] { 5, 6, 7 }.Contains(yearBranch.Index); // å·³åˆæœª
+            if (branch.Index == 7) // æœª
+                return new[] { 8, 9, 10 }.Contains(yearBranch.Index); // ç”³é…‰æˆŒ
 
             return false;
         }
 
         /// <summary>
-        /// ÍöÉñ
-        /// ÒúÎçĞç¼ûËÈ£¬º¥Ã®Î´¼ûÒú£¬ËÈÓÏ³ó¼ûÉê£¬Éê×Ó³½¼ûº¥
+        /// äº¡ç¥
+        /// å¯…åˆæˆŒè§å·³ï¼Œäº¥å¯æœªè§å¯…ï¼Œå·³é…‰ä¸‘è§ç”³ï¼Œç”³å­è¾°è§äº¥
         /// </summary>
         private static bool IsWangShen(EarthBranch baseBranch, EarthBranch branch)
         {
-            if (branch.Index == 11) // º¥
-                return new[] { 8, 0, 4 }.Contains(baseBranch.Index); // Éê×Ó³½
-            if (branch.Index == 5) // ËÈ
-                return new[] { 2, 6, 10 }.Contains(baseBranch.Index); // ÒúÎçĞç
-            if (branch.Index == 8) // Éê
-                return new[] { 5, 9, 1 }.Contains(baseBranch.Index); // ËÈÓÏ³ó
-            if (branch.Index == 2) // Òú
-                return new[] { 11, 3, 7 }.Contains(baseBranch.Index); // º¥Ã®Î´
+            if (branch.Index == 11) // äº¥
+                return new[] { 8, 0, 4 }.Contains(baseBranch.Index); // ç”³å­è¾°
+            if (branch.Index == 5) // å·³
+                return new[] { 2, 6, 10 }.Contains(baseBranch.Index); // å¯…åˆæˆŒ
+            if (branch.Index == 8) // ç”³
+                return new[] { 5, 9, 1 }.Contains(baseBranch.Index); // å·³é…‰ä¸‘
+            if (branch.Index == 2) // å¯…
+                return new[] { 11, 3, 7 }.Contains(baseBranch.Index); // äº¥å¯æœª
 
             return false;
         }
 
         /// <summary>
-        /// Ê®¶ñ´ó°Ü
-        /// ¼×³½¡¢ÒÒËÈ¡¢ÈÉÉê¡¢±ûÉê¡¢¶¡º¥¡¢¸ı³½¡¢ÎìĞç¡¢¹ïº¥¡¢ĞÁËÈ¡¢¼º³ó
+        /// åæ¶å¤§è´¥
+        /// ç”²è¾°ã€ä¹™å·³ã€å£¬ç”³ã€ä¸™ç”³ã€ä¸äº¥ã€åºšè¾°ã€æˆŠæˆŒã€ç™¸äº¥ã€è¾›å·³ã€å·±ä¸‘
         /// </summary>
         private static bool IsShiEDaBai(HeavenStem dayStem, EarthBranch dayBranch)
         {
             var validPairs = new Dictionary<int, int>
             {
-                { 0, 4 },  // ¼×³½
-                { 1, 5 },  // ÒÒËÈ
-                { 8, 8 },  // ÈÉÉê
-                { 2, 8 },  // ±ûÉê
-                { 3, 11 }, // ¶¡º¥
-                { 6, 4 },  // ¸ı³½
-                { 4, 10 }, // ÎìĞç
-                { 9, 11 }, // ¹ïº¥
-                { 7, 5 },  // ĞÁËÈ
-                { 5, 1 }   // ¼º³ó
+                { 0, 4 },  // ç”²è¾°
+                { 1, 5 },  // ä¹™å·³
+                { 8, 8 },  // å£¬ç”³
+                { 2, 8 },  // ä¸™ç”³
+                { 3, 11 }, // ä¸äº¥
+                { 6, 4 },  // åºšè¾°
+                { 4, 10 }, // æˆŠæˆŒ
+                { 9, 11 }, // ç™¸äº¥
+                { 7, 5 },  // è¾›å·³
+                { 5, 1 }   // å·±ä¸‘
             };
 
             return validPairs.ContainsKey(dayStem.Index) && validPairs[dayStem.Index] == dayBranch.Index;
         }
 
         /// <summary>
-        /// ´Ê¹İ
-        /// ÄêÖùÄÉÒôÎª½ğÃü¼ûÆäËûÈıÖ§ÓĞ"Éê"Îª´Ê¹İ£¬¼û"ÈÉÉê"ÎªÕı´Ê¹İ
-        /// ÄêÖùÄÉÒôÎªÄ¾Ãü¼ûÆäËûÈıÖ§ÓĞ"Òú"Îª´Ê¹İ£¬¼û"¸ıÒú"ÎªÕı´Ê¹İ
-        /// ÄêÖùÄÉÒôÎªË®Ãü¼ûÆäËûÈıÖ§ÓĞ"º¥"Îª´Ê¹İ£¬¼û"¹ïº¥"ÎªÕı´Ê¹İ
-        /// ÄêÖùÄÉÒôÎªÍÁÃü¼ûÆäËûÈıÖ§ÓĞ"º¥"Îª´Ê¹İ£¬¼û"¶¡º¥"ÎªÕı´Ê¹İ
-        /// ÄêÖùÄÉÒôÎª»ğÃü¼ûÆäËûÈıÖ§ÓĞ"ËÈ"Îª´Ê¹İ£¬¼û"ÒÒËÈ"ÎªÕı´Ê¹İ
+        /// è¯é¦†
+        /// å¹´æŸ±çº³éŸ³ä¸ºé‡‘å‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"ç”³"ä¸ºè¯é¦†ï¼Œè§"å£¬ç”³"ä¸ºæ­£è¯é¦†
+        /// å¹´æŸ±çº³éŸ³ä¸ºæœ¨å‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"å¯…"ä¸ºè¯é¦†ï¼Œè§"åºšå¯…"ä¸ºæ­£è¯é¦†
+        /// å¹´æŸ±çº³éŸ³ä¸ºæ°´å‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"äº¥"ä¸ºè¯é¦†ï¼Œè§"ç™¸äº¥"ä¸ºæ­£è¯é¦†
+        /// å¹´æŸ±çº³éŸ³ä¸ºåœŸå‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"äº¥"ä¸ºè¯é¦†ï¼Œè§"ä¸äº¥"ä¸ºæ­£è¯é¦†
+        /// å¹´æŸ±çº³éŸ³ä¸ºç«å‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"å·³"ä¸ºè¯é¦†ï¼Œè§"ä¹™å·³"ä¸ºæ­£è¯é¦†
         /// </summary>
         private static bool IsCiGuan(string yearSound, HeavenStem stem, EarthBranch branch)
         {
             if (string.IsNullOrEmpty(yearSound) || yearSound.Length < 3)
                 return false;
 
-            var element = yearSound.Substring(2, 1); // »ñÈ¡ÄÉÒôµÄÎåĞĞ£¨Èç"º£ÖĞ½ğ"È¡"½ğ"£©
+            var element = yearSound.Substring(2, 1); // è·å–çº³éŸ³çš„äº”è¡Œï¼ˆå¦‚"æµ·ä¸­é‡‘"å–"é‡‘"ï¼‰
 
             var rules = new Dictionary<string, (int branch, int stem, int stemBranch)>
             {
-                { "½ğ", (8, 8, 3) },  // ½ğÃü¼ûÉê£¬ÈÉÉêÎªÕı£¨ÈÉ=8£¬Éê=8£¬µ«Êµ¼ÊÓ¦¸ÃÊÇÈÉ=8¶ÔÓ¦Ã®=3£©
-                { "Ä¾", (2, 6, 2) },  // Ä¾Ãü¼ûÒú£¬¸ıÒúÎªÕı
-                { "Ë®", (11, 9, 11) }, // Ë®Ãü¼ûº¥£¬¹ïº¥ÎªÕı
-                { "ÍÁ", (11, 3, 11) }, // ÍÁÃü¼ûº¥£¬¶¡º¥ÎªÕı
-                { "»ğ", (5, 1, 5) }   // »ğÃü¼ûËÈ£¬ÒÒËÈÎªÕı
+                { "é‡‘", (8, 8, 3) },  // é‡‘å‘½è§ç”³ï¼Œå£¬ç”³ä¸ºæ­£ï¼ˆå£¬=8ï¼Œç”³=8ï¼Œä½†å®é™…åº”è¯¥æ˜¯å£¬=8å¯¹åº”å¯=3ï¼‰
+                { "æœ¨", (2, 6, 2) },  // æœ¨å‘½è§å¯…ï¼Œåºšå¯…ä¸ºæ­£
+                { "æ°´", (11, 9, 11) }, // æ°´å‘½è§äº¥ï¼Œç™¸äº¥ä¸ºæ­£
+                { "åœŸ", (11, 3, 11) }, // åœŸå‘½è§äº¥ï¼Œä¸äº¥ä¸ºæ­£
+                { "ç«", (5, 1, 5) }   // ç«å‘½è§å·³ï¼Œä¹™å·³ä¸ºæ­£
             };
 
             if (!rules.ContainsKey(element))
@@ -1244,11 +1235,11 @@ namespace tyme.culture
 
             var (targetBranch, targetStem, targetStemBranch) = rules[element];
 
-            // ¼ûµØÖ§¼´¿É
+            // è§åœ°æ”¯å³å¯
             if (branch.Index == targetBranch)
                 return true;
 
-            // Õı´Ê¹İ£ºÌØ¶¨¸ÉÖ§×éºÏ
+            // æ­£è¯é¦†ï¼šç‰¹å®šå¹²æ”¯ç»„åˆ
             if (stem.Index == targetStem && branch.Index == targetStemBranch)
                 return true;
 
@@ -1256,12 +1247,12 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// Ñ§ÌÃ
-        /// ÄêÖùÄÉÒôÎª½ğÃü¼ûÆäËûÈıÖ§ÓĞ"ËÈ"ÎªÑ§ÌÃ£¬¼û"ĞÁËÈ"ÎªÕıÑ§ÌÃ
-        /// ÄêÖùÄÉÒôÎªÄ¾Ãü¼ûÆäËûÈıÖ§ÓĞ"º¥"ÎªÑ§ÌÃ£¬¼û"¼ºº¥"ÎªÕıÑ§ÌÃ
-        /// ÄêÖùÄÉÒôÎªË®Ãü¼ûÆäËûÈıÖ§ÓĞ"Éê"ÎªÑ§ÌÃ£¬¼û"¼×Éê"ÎªÕıÑ§ÌÃ
-        /// ÄêÖùÄÉÒôÎªÍÁÃü¼ûÆäËûÈıÖ§ÓĞ"Éê"ÎªÑ§ÌÃ£¬¼û"ÎìÉê"ÎªÕıÑ§ÌÃ
-        /// ÄêÖùÄÉÒôÎª»ğÃü¼ûÆäËûÈıÖ§ÓĞ"Òú"ÎªÑ§ÌÃ£¬¼û"±ûÒú"ÎªÕıÑ§ÌÃ
+        /// å­¦å ‚
+        /// å¹´æŸ±çº³éŸ³ä¸ºé‡‘å‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"å·³"ä¸ºå­¦å ‚ï¼Œè§"è¾›å·³"ä¸ºæ­£å­¦å ‚
+        /// å¹´æŸ±çº³éŸ³ä¸ºæœ¨å‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"äº¥"ä¸ºå­¦å ‚ï¼Œè§"å·±äº¥"ä¸ºæ­£å­¦å ‚
+        /// å¹´æŸ±çº³éŸ³ä¸ºæ°´å‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"ç”³"ä¸ºå­¦å ‚ï¼Œè§"ç”²ç”³"ä¸ºæ­£å­¦å ‚
+        /// å¹´æŸ±çº³éŸ³ä¸ºåœŸå‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"ç”³"ä¸ºå­¦å ‚ï¼Œè§"æˆŠç”³"ä¸ºæ­£å­¦å ‚
+        /// å¹´æŸ±çº³éŸ³ä¸ºç«å‘½è§å…¶ä»–ä¸‰æ”¯æœ‰"å¯…"ä¸ºå­¦å ‚ï¼Œè§"ä¸™å¯…"ä¸ºæ­£å­¦å ‚
         /// </summary>
         private static bool IsXueTang(string yearSound, HeavenStem stem, EarthBranch branch)
         {
@@ -1272,11 +1263,11 @@ namespace tyme.culture
 
             var rules = new Dictionary<string, (int branch, int stem, int stemBranch)>
             {
-                { "½ğ", (5, 7, 5) },   // ½ğÃü¼ûËÈ£¬ĞÁËÈÎªÕı
-                { "Ä¾", (11, 5, 11) }, // Ä¾Ãü¼ûº¥£¬¼ºº¥ÎªÕı
-                { "Ë®", (8, 0, 8) },   // Ë®Ãü¼ûÉê£¬¼×ÉêÎªÕı
-                { "ÍÁ", (8, 4, 8) },   // ÍÁÃü¼ûÉê£¬ÎìÉêÎªÕı
-                { "»ğ", (2, 2, 2) }    // »ğÃü¼ûÒú£¬±ûÒúÎªÕı
+                { "é‡‘", (5, 7, 5) },   // é‡‘å‘½è§å·³ï¼Œè¾›å·³ä¸ºæ­£
+                { "æœ¨", (11, 5, 11) }, // æœ¨å‘½è§äº¥ï¼Œå·±äº¥ä¸ºæ­£
+                { "æ°´", (8, 0, 8) },   // æ°´å‘½è§ç”³ï¼Œç”²ç”³ä¸ºæ­£
+                { "åœŸ", (8, 4, 8) },   // åœŸå‘½è§ç”³ï¼ŒæˆŠç”³ä¸ºæ­£
+                { "ç«", (2, 2, 2) }    // ç«å‘½è§å¯…ï¼Œä¸™å¯…ä¸ºæ­£
             };
 
             if (!rules.ContainsKey(element))
@@ -1284,11 +1275,11 @@ namespace tyme.culture
 
             var (targetBranch, targetStem, targetStemBranch) = rules[element];
 
-            // ¼ûµØÖ§¼´¿É
+            // è§åœ°æ”¯å³å¯
             if (branch.Index == targetBranch)
                 return true;
 
-            // ÕıÑ§ÌÃ£ºÌØ¶¨¸ÉÖ§×éºÏ
+            // æ­£å­¦å ‚ï¼šç‰¹å®šå¹²æ”¯ç»„åˆ
             if (stem.Index == targetStem && branch.Index == targetStemBranch)
                 return true;
 
@@ -1296,42 +1287,42 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÑªÈĞ
-        /// ÒúÔÂ³ó£¬Ã®ÔÂÎ´£¬³½ÔÂÒú£¬ËÈÔÂÉê£¬ÎçÔÂÃ®£¬Î´ÔÂÓÏ
-        /// ÉêÔÂ³½£¬ÓÏÔÂĞç£¬ĞçÔÂËÈ£¬º¥ÔÂº¥£¬×ÓÔÂÎç£¬³óÔÂ×Ó
+        /// è¡€åˆƒ
+        /// å¯…æœˆä¸‘ï¼Œå¯æœˆæœªï¼Œè¾°æœˆå¯…ï¼Œå·³æœˆç”³ï¼Œåˆæœˆå¯ï¼Œæœªæœˆé…‰
+        /// ç”³æœˆè¾°ï¼Œé…‰æœˆæˆŒï¼ŒæˆŒæœˆå·³ï¼Œäº¥æœˆäº¥ï¼Œå­æœˆåˆï¼Œä¸‘æœˆå­
         /// </summary>
         private static bool IsXueRen(EarthBranch monthBranch, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 6 },  // ×ÓÔÂ¼ûÎç
-                { 1, 0 },  // ³óÔÂ¼û×Ó
-                { 2, 1 },  // ÒúÔÂ¼û³ó
-                { 3, 7 },  // Ã®ÔÂ¼ûÎ´
-                { 4, 2 },  // ³½ÔÂ¼ûÒú
-                { 5, 8 },  // ËÈÔÂ¼ûÉê
-                { 6, 3 },  // ÎçÔÂ¼ûÃ®
-                { 7, 9 },  // Î´ÔÂ¼ûÓÏ
-                { 8, 4 },  // ÉêÔÂ¼û³½
-                { 9, 10 }, // ÓÏÔÂ¼ûĞç
-                { 10, 5 }, // ĞçÔÂ¼ûËÈ
-                { 11, 11 } // º¥ÔÂ¼ûº¥
+                { 0, 6 },  // å­æœˆè§åˆ
+                { 1, 0 },  // ä¸‘æœˆè§å­
+                { 2, 1 },  // å¯…æœˆè§ä¸‘
+                { 3, 7 },  // å¯æœˆè§æœª
+                { 4, 2 },  // è¾°æœˆè§å¯…
+                { 5, 8 },  // å·³æœˆè§ç”³
+                { 6, 3 },  // åˆæœˆè§å¯
+                { 7, 9 },  // æœªæœˆè§é…‰
+                { 8, 4 },  // ç”³æœˆè§è¾°
+                { 9, 10 }, // é…‰æœˆè§æˆŒ
+                { 10, 5 }, // æˆŒæœˆè§å·³
+                { 11, 11 } // äº¥æœˆè§äº¥
             };
 
             return rules.ContainsKey(monthBranch.Index) && rules[monthBranch.Index] == branch.Index;
         }
 
         /// <summary>
-        /// Ê®ÁéÈÕ
-        /// ¼×³½¡¢ÒÒº¥¡¢±û³½¡¢¶¡ÓÏ¡¢ÎìÎç¡¢¸ıĞç¡¢¸ıÒú¡¢ĞÁº¥¡¢ÈÉÒú¡¢¹ïÎ´
+        /// åçµæ—¥
+        /// ç”²è¾°ã€ä¹™äº¥ã€ä¸™è¾°ã€ä¸é…‰ã€æˆŠåˆã€åºšæˆŒã€åºšå¯…ã€è¾›äº¥ã€å£¬å¯…ã€ç™¸æœª
         /// </summary>
         private static bool IsShiLing(HeavenStem dayStem, EarthBranch dayBranch)
         {
             var validPairs = new HashSet<string>
             {
-                "¼×³½", "ÒÒº¥", "±û³½", "¶¡ÓÏ",
-                "ÎìÎç", "¸ıĞç", "¸ıÒú", "ĞÁº¥",
-                "ÈÉÒú", "¹ïÎ´"
+                "ç”²è¾°", "ä¹™äº¥", "ä¸™è¾°", "ä¸é…‰",
+                "æˆŠåˆ", "åºšæˆŒ", "åºšå¯…", "è¾›äº¥",
+                "å£¬å¯…", "ç™¸æœª"
             };
 
             var dayPillar = dayStem.GetName() + dayBranch.GetName();
@@ -1339,92 +1330,92 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// Á÷Ï¼
-        /// ¼×ÈÕÓÏ£¬ÒÒÈÕĞç£¬±ûÈÕÎ´£¬¶¡ÈÕÉê£¬ÎìÈÕËÈ
-        /// ¼ºÈÕÎç£¬¸ıÈÕ³½£¬ĞÁÈÕÃ®£¬ÈÉÈÕº¥£¬¹ïÈÕÒú
+        /// æµéœ
+        /// ç”²æ—¥é…‰ï¼Œä¹™æ—¥æˆŒï¼Œä¸™æ—¥æœªï¼Œä¸æ—¥ç”³ï¼ŒæˆŠæ—¥å·³
+        /// å·±æ—¥åˆï¼Œåºšæ—¥è¾°ï¼Œè¾›æ—¥å¯ï¼Œå£¬æ—¥äº¥ï¼Œç™¸æ—¥å¯…
         /// </summary>
         private static bool IsLiuXia(HeavenStem dayStem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 9 },  // ¼×¼ûÓÏ
-                { 1, 10 }, // ÒÒ¼ûĞç
-                { 2, 7 },  // ±û¼ûÎ´
-                { 3, 8 },  // ¶¡¼ûÉê
-                { 4, 5 },  // Îì¼ûËÈ
-                { 5, 6 },  // ¼º¼ûÎç
-                { 6, 4 },  // ¸ı¼û³½
-                { 7, 3 },  // ĞÁ¼ûÃ®
-                { 8, 11 }, // ÈÉ¼ûº¥
-                { 9, 2 }   // ¹ï¼ûÒú
+                { 0, 9 },  // ç”²è§é…‰
+                { 1, 10 }, // ä¹™è§æˆŒ
+                { 2, 7 },  // ä¸™è§æœª
+                { 3, 8 },  // ä¸è§ç”³
+                { 4, 5 },  // æˆŠè§å·³
+                { 5, 6 },  // å·±è§åˆ
+                { 6, 4 },  // åºšè§è¾°
+                { 7, 3 },  // è¾›è§å¯
+                { 8, 11 }, // å£¬è§äº¥
+                { 9, 2 }   // ç™¸è§å¯…
             };
 
             return rules.ContainsKey(dayStem.Index) && rules[dayStem.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ºìÑŞ
-        /// ¼×ÈÕÎç£¬ÒÒÈÕÎç£¬±ûÈÕÒú£¬¶¡ÈÕÎ´£¬ÎìÈÕ³½
-        /// ¼ºÈÕ³½£¬¸ıÈÕĞç£¬ĞÁÈÕÓÏ£¬ÈÉÈÕ×Ó£¬¹ïÈÕÉê
+        /// çº¢è‰³
+        /// ç”²æ—¥åˆï¼Œä¹™æ—¥åˆï¼Œä¸™æ—¥å¯…ï¼Œä¸æ—¥æœªï¼ŒæˆŠæ—¥è¾°
+        /// å·±æ—¥è¾°ï¼Œåºšæ—¥æˆŒï¼Œè¾›æ—¥é…‰ï¼Œå£¬æ—¥å­ï¼Œç™¸æ—¥ç”³
         /// </summary>
         private static bool IsHongYan(HeavenStem dayStem, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 0, 6 },  // ¼×¼ûÎç
-                { 1, 6 },  // ÒÒ¼ûÎç
-                { 2, 2 },  // ±û¼ûÒú
-                { 3, 7 },  // ¶¡¼ûÎ´
-                { 4, 4 },  // Îì¼û³½
-                { 5, 4 },  // ¼º¼û³½
-                { 6, 10 }, // ¸ı¼ûĞç
-                { 7, 9 },  // ĞÁ¼ûÓÏ
-                { 8, 0 },  // ÈÉ¼û×Ó
-                { 9, 8 }   // ¹ï¼ûÉê
+                { 0, 6 },  // ç”²è§åˆ
+                { 1, 6 },  // ä¹™è§åˆ
+                { 2, 2 },  // ä¸™è§å¯…
+                { 3, 7 },  // ä¸è§æœª
+                { 4, 4 },  // æˆŠè§è¾°
+                { 5, 4 },  // å·±è§è¾°
+                { 6, 10 }, // åºšè§æˆŒ
+                { 7, 9 },  // è¾›è§é…‰
+                { 8, 0 },  // å£¬è§å­
+                { 9, 8 }   // ç™¸è§ç”³
             };
 
             return rules.ContainsKey(dayStem.Index) && rules[dayStem.Index] == branch.Index;
         }
 
         /// <summary>
-        /// Í¯×Ó
-        /// ´ºÇïÒú×Ó¹ó£¬¶¬ÏÄÃ®Î´³½
-        /// ½ğÄ¾ÂíÃ®ºÏ£¬Ë®»ğ¼¦È®¶à
-        /// ÍÁÃü·ê³½ËÈ£¬Í¯×Ó¶¨²»´í
+        /// ç«¥å­
+        /// æ˜¥ç§‹å¯…å­è´µï¼Œå†¬å¤å¯æœªè¾°
+        /// é‡‘æœ¨é©¬å¯åˆï¼Œæ°´ç«é¸¡çŠ¬å¤š
+        /// åœŸå‘½é€¢è¾°å·³ï¼Œç«¥å­å®šä¸é”™
         /// </summary>
         private static bool IsTongZi(EarthBranch monthBranch, string yearSound, EarthBranch targetBranch)
         {
-            // µÚÒ»ÖÖ²é·¨£º¸ù¾İ¼¾½Ú
-            // ´ºÇï£¨ÒúÃ®³½¡¢ÉêÓÏĞç£©¼ûÒú»ò×Ó
+            // ç¬¬ä¸€ç§æŸ¥æ³•ï¼šæ ¹æ®å­£èŠ‚
+            // æ˜¥ç§‹ï¼ˆå¯…å¯è¾°ã€ç”³é…‰æˆŒï¼‰è§å¯…æˆ–å­
             if (new[] { 2, 3, 4, 8, 9, 10 }.Contains(monthBranch.Index))
             {
-                if (new[] { 2, 0 }.Contains(targetBranch.Index)) // Òú»ò×Ó
+                if (new[] { 2, 0 }.Contains(targetBranch.Index)) // å¯…æˆ–å­
                     return true;
             }
 
-            // ¶¬ÏÄ£¨ËÈÎçÎ´¡¢º¥×Ó³ó£©¼ûÃ®¡¢Î´»ò³½
+            // å†¬å¤ï¼ˆå·³åˆæœªã€äº¥å­ä¸‘ï¼‰è§å¯ã€æœªæˆ–è¾°
             if (new[] { 5, 6, 7, 11, 0, 1 }.Contains(monthBranch.Index))
             {
-                if (new[] { 3, 7, 4 }.Contains(targetBranch.Index)) // Ã®¡¢Î´»ò³½
+                if (new[] { 3, 7, 4 }.Contains(targetBranch.Index)) // å¯ã€æœªæˆ–è¾°
                     return true;
             }
 
-            // µÚ¶şÖÖ²é·¨£º¸ù¾İÄêÖùÄÉÒôÎåĞĞ
+            // ç¬¬äºŒç§æŸ¥æ³•ï¼šæ ¹æ®å¹´æŸ±çº³éŸ³äº”è¡Œ
             if (string.IsNullOrEmpty(yearSound) || yearSound.Length < 3)
                 return false;
 
             var element = yearSound.Substring(2, 1);
 
-            // ½ğÄ¾Ãü¼ûÎç»òÃ®
-            if ((element == "½ğ" || element == "Ä¾") && new[] { 6, 3 }.Contains(targetBranch.Index))
+            // é‡‘æœ¨å‘½è§åˆæˆ–å¯
+            if ((element == "é‡‘" || element == "æœ¨") && new[] { 6, 3 }.Contains(targetBranch.Index))
                 return true;
 
-            // Ë®»ğÃü¼ûÓÏ»òĞç
-            if ((element == "Ë®" || element == "»ğ") && new[] { 9, 10 }.Contains(targetBranch.Index))
+            // æ°´ç«å‘½è§é…‰æˆ–æˆŒ
+            if ((element == "æ°´" || element == "ç«") && new[] { 9, 10 }.Contains(targetBranch.Index))
                 return true;
 
-            // ÍÁÃü¼û³½»òËÈ
-            if (element == "ÍÁ" && new[] { 4, 5 }.Contains(targetBranch.Index))
+            // åœŸå‘½è§è¾°æˆ–å·³
+            if (element == "åœŸ" && new[] { 4, 5 }.Contains(targetBranch.Index))
                 return true;
 
             return false;
@@ -1433,22 +1424,22 @@ namespace tyme.culture
 
 
         /// <summary>
-        /// ¸£ĞÇ¹óÈË
-        /// ·²¼×¡¢±ûÁ½¸É¼ûÒú»ò×Ó£¬ÒÒ¡¢¹ïÁ½¸É¼ûÃ®»ò³ó£¬Îì¸É¼ûÉê£¬¼º¸É¼ûÎ´£¬¶¡¸É¼ûº¥£¬¸ı¸É¼ûÎç£¬ĞÁ¸É¼ûËÈ£¬ÈÉ¸É¼û³½
-        /// ²é·¨£ºÒÔÄê¸É/ÈÕ¸É²éËÄµØÖ§
+        /// ç¦æ˜Ÿè´µäºº
+        /// å‡¡ç”²ã€ä¸™ä¸¤å¹²è§å¯…æˆ–å­ï¼Œä¹™ã€ç™¸ä¸¤å¹²è§å¯æˆ–ä¸‘ï¼ŒæˆŠå¹²è§ç”³ï¼Œå·±å¹²è§æœªï¼Œä¸å¹²è§äº¥ï¼Œåºšå¹²è§åˆï¼Œè¾›å¹²è§å·³ï¼Œå£¬å¹²è§è¾°
+        /// æŸ¥æ³•ï¼šä»¥å¹´å¹²/æ—¥å¹²æŸ¥å››åœ°æ”¯
         /// </summary>
         private static bool IsFuXing(HeavenStem stem, EarthBranch branch)
         {
             var rules = new[]
             {
-                new { Gan = new[] { 0, 2 }, Zhi = new[] { 2, 0 } },    // ¼×¡¢±û¼ûÒú¡¢×Ó
-                new { Gan = new[] { 1, 9 }, Zhi = new[] { 3, 1 } },    // ÒÒ¡¢¹ï¼ûÃ®¡¢³ó
-                new { Gan = new[] { 4 }, Zhi = new[] { 8 } },          // Îì¼ûÉê
-                new { Gan = new[] { 5 }, Zhi = new[] { 7 } },          // ¼º¼ûÎ´
-                new { Gan = new[] { 3 }, Zhi = new[] { 11 } },         // ¶¡¼ûº¥
-                new { Gan = new[] { 6 }, Zhi = new[] { 6 } },          // ¸ı¼ûÎç
-                new { Gan = new[] { 7 }, Zhi = new[] { 5 } },          // ĞÁ¼ûËÈ
-                new { Gan = new[] { 8 }, Zhi = new[] { 4 } }           // ÈÉ¼û³½
+                new { Gan = new[] { 0, 2 }, Zhi = new[] { 2, 0 } },    // ç”²ã€ä¸™è§å¯…ã€å­
+                new { Gan = new[] { 1, 9 }, Zhi = new[] { 3, 1 } },    // ä¹™ã€ç™¸è§å¯ã€ä¸‘
+                new { Gan = new[] { 4 }, Zhi = new[] { 8 } },          // æˆŠè§ç”³
+                new { Gan = new[] { 5 }, Zhi = new[] { 7 } },          // å·±è§æœª
+                new { Gan = new[] { 3 }, Zhi = new[] { 11 } },         // ä¸è§äº¥
+                new { Gan = new[] { 6 }, Zhi = new[] { 6 } },          // åºšè§åˆ
+                new { Gan = new[] { 7 }, Zhi = new[] { 5 } },          // è¾›è§å·³
+                new { Gan = new[] { 8 }, Zhi = new[] { 4 } }           // å£¬è§è¾°
             };
 
             foreach (var rule in rules)
@@ -1464,55 +1455,55 @@ namespace tyme.culture
 
 
         /// <summary>
-        /// ÌìµÂºÏ
-        /// ÒúÔÂÈÉ£¬Ã®ÔÂËÈ£¬³½ÔÂ¶¡£¬ËÈÔÂ±û£¬ÎçÔÂÒú£¬Î´ÔÂ¼º
-        /// ÉêÔÂÎì£¬ÓÏÔÂº¥£¬ĞçÔÂĞÁ£¬º¥ÔÂ¸ı£¬×ÓÔÂÉê£¬³óÔÂÒÒ
+        /// å¤©å¾·åˆ
+        /// å¯…æœˆå£¬ï¼Œå¯æœˆå·³ï¼Œè¾°æœˆä¸ï¼Œå·³æœˆä¸™ï¼Œåˆæœˆå¯…ï¼Œæœªæœˆå·±
+        /// ç”³æœˆæˆŠï¼Œé…‰æœˆäº¥ï¼ŒæˆŒæœˆè¾›ï¼Œäº¥æœˆåºšï¼Œå­æœˆç”³ï¼Œä¸‘æœˆä¹™
         /// </summary>
         private static bool IsTianDeHe(EarthBranch monthBranch, HeavenStem stem)
         {
             var rules = new Dictionary<int, int>
             {
-                { 2, 8 },  // ÒúÔÂ¼ûÈÉ
-                { 4, 3 },  // ³½ÔÂ¼û¶¡
-                { 5, 2 },  // ËÈÔÂ¼û±û
-                { 7, 5 },  // Î´ÔÂ¼û¼º
-                { 8, 4 },  // ÉêÔÂ¼ûÎì
-                { 10, 7 }, // ĞçÔÂ¼ûĞÁ
-                { 11, 6 }, // º¥ÔÂ¼û¸ı
-                { 1, 1 }   // ³óÔÂ¼ûÒÒ
+                { 2, 8 },  // å¯…æœˆè§å£¬
+                { 4, 3 },  // è¾°æœˆè§ä¸
+                { 5, 2 },  // å·³æœˆè§ä¸™
+                { 7, 5 },  // æœªæœˆè§å·±
+                { 8, 4 },  // ç”³æœˆè§æˆŠ
+                { 10, 7 }, // æˆŒæœˆè§è¾›
+                { 11, 6 }, // äº¥æœˆè§åºš
+                { 1, 1 }   // ä¸‘æœˆè§ä¹™
             };
 
             return rules.ContainsKey(monthBranch.Index) && rules[monthBranch.Index] == stem.Index;
         }
 
         /// <summary>
-        /// ÌìµÂºÏ£¨µØÖ§°æ±¾£©
+        /// å¤©å¾·åˆï¼ˆåœ°æ”¯ç‰ˆæœ¬ï¼‰
         /// </summary>
         private static bool IsTianDeHe(EarthBranch monthBranch, EarthBranch branch)
         {
             var rules = new Dictionary<int, int>
             {
-                { 3, 5 },  // Ã®ÔÂ¼ûËÈ
-                { 6, 2 },  // ÎçÔÂ¼ûÒú
-                { 9, 11 }, // ÓÏÔÂ¼ûº¥
-                { 0, 8 }   // ×ÓÔÂ¼ûÉê
+                { 3, 5 },  // å¯æœˆè§å·³
+                { 6, 2 },  // åˆæœˆè§å¯…
+                { 9, 11 }, // é…‰æœˆè§äº¥
+                { 0, 8 }   // å­æœˆè§ç”³
             };
 
             return rules.ContainsKey(monthBranch.Index) && rules[monthBranch.Index] == branch.Index;
         }
 
         /// <summary>
-        /// ÔÂµÂºÏ
-        /// ÒúÎçĞçÔÂ¼ûĞÁ£¬Éê×Ó³½ÔÂ¼û¶¡£¬ËÈÓÏ³óÔÂ¼ûÒÒ£¬º¥Ã®Î´ÔÂ¼û¼º
+        /// æœˆå¾·åˆ
+        /// å¯…åˆæˆŒæœˆè§è¾›ï¼Œç”³å­è¾°æœˆè§ä¸ï¼Œå·³é…‰ä¸‘æœˆè§ä¹™ï¼Œäº¥å¯æœªæœˆè§å·±
         /// </summary>
         private static bool IsYueDeHe(EarthBranch monthBranch, HeavenStem stem)
         {
             var rules = new Dictionary<int, int[]>
             {
-                { 7, new[] { 2, 6, 10 } },  // ĞÁ¶ÔÓ¦ÒúÎçĞç
-                { 3, new[] { 8, 0, 4 } },   // ¶¡¶ÔÓ¦Éê×Ó³½
-                { 1, new[] { 5, 9, 1 } },   // ÒÒ¶ÔÓ¦ËÈÓÏ³ó
-                { 5, new[] { 11, 3, 7 } }   // ¼º¶ÔÓ¦º¥Ã®Î´
+                { 7, new[] { 2, 6, 10 } },  // è¾›å¯¹åº”å¯…åˆæˆŒ
+                { 3, new[] { 8, 0, 4 } },   // ä¸å¯¹åº”ç”³å­è¾°
+                { 1, new[] { 5, 9, 1 } },   // ä¹™å¯¹åº”å·³é…‰ä¸‘
+                { 5, new[] { 11, 3, 7 } }   // å·±å¯¹åº”äº¥å¯æœª
             };
 
             foreach (var rule in rules)
@@ -1525,15 +1516,15 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ¾Å³ó
-        /// ¶¡ÓÏ¡¢Îì×Ó¡¢ÎìÎç¡¢¼ºÃ®¡¢¼ºÓÏ¡¢ĞÁÃ®¡¢ĞÁÓÏ¡¢ÈÉ×Ó¡¢ÈÉÎç
+        /// ä¹ä¸‘
+        /// ä¸é…‰ã€æˆŠå­ã€æˆŠåˆã€å·±å¯ã€å·±é…‰ã€è¾›å¯ã€è¾›é…‰ã€å£¬å­ã€å£¬åˆ
         /// </summary>
         private static bool IsJiuChou(HeavenStem dayStem, EarthBranch dayBranch)
         {
             var validPairs = new HashSet<string>
             {
-                "¶¡ÓÏ", "Îì×Ó", "ÎìÎç", "¼ºÃ®", "¼ºÓÏ",
-                "ĞÁÃ®", "ĞÁÓÏ", "ÈÉ×Ó", "ÈÉÎç"
+                "ä¸é…‰", "æˆŠå­", "æˆŠåˆ", "å·±å¯", "å·±é…‰",
+                "è¾›å¯", "è¾›é…‰", "å£¬å­", "å£¬åˆ"
             };
 
             var dayPillar = dayStem.GetName() + dayBranch.GetName();
@@ -1541,15 +1532,15 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// °Ë×¨
-        /// ¼×Òú¡¢ÒÒÃ®¡¢¶¡Î´¡¢ÎìĞç¡¢¼ºÎ´¡¢¸ıÉê¡¢ĞÁÓÏ¡¢¹ï³ó
+        /// å…«ä¸“
+        /// ç”²å¯…ã€ä¹™å¯ã€ä¸æœªã€æˆŠæˆŒã€å·±æœªã€åºšç”³ã€è¾›é…‰ã€ç™¸ä¸‘
         /// </summary>
         private static bool IsBaZhuan(HeavenStem dayStem, EarthBranch dayBranch)
         {
             var validPairs = new HashSet<string>
             {
-                "¼×Òú", "ÒÒÃ®", "¶¡Î´", "ÎìĞç",
-                "¼ºÎ´", "¸ıÉê", "ĞÁÓÏ", "¹ï³ó"
+                "ç”²å¯…", "ä¹™å¯", "ä¸æœª", "æˆŠæˆŒ",
+                "å·±æœª", "åºšç”³", "è¾›é…‰", "ç™¸ä¸‘"
             };
 
             var dayPillar = dayStem.GetName() + dayBranch.GetName();
@@ -1557,16 +1548,16 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ÅĞ¶ÏÌì¸ÉÊÇ·ñÎªÑô¸É
+        /// åˆ¤æ–­å¤©å¹²æ˜¯å¦ä¸ºé˜³å¹²
         /// </summary>
         private static bool IsYangStem(HeavenStem stem)
         {
-            // ¼×¡¢±û¡¢Îì¡¢¸ı¡¢ÈÉÎªÑô¸É£¨Ë÷Òı£º0¡¢2¡¢4¡¢6¡¢8£©
+            // ç”²ã€ä¸™ã€æˆŠã€åºšã€å£¬ä¸ºé˜³å¹²ï¼ˆç´¢å¼•ï¼š0ã€2ã€4ã€6ã€8ï¼‰
             return stem.Index % 2 == 0;
         }
 
         /// <summary>
-        /// »ñÈ¡¸ÉÖ§ÔÚÁùÊ®¼××ÓÖĞµÄË³Ğò£¨1-60£©
+        /// è·å–å¹²æ”¯åœ¨å…­åç”²å­ä¸­çš„é¡ºåºï¼ˆ1-60ï¼‰
         /// </summary>
         private static int GetJiaZiOrder(string ganZhi)
         {
@@ -1576,10 +1567,10 @@ namespace tyme.culture
 
         #endregion
 
-        #region ¸¨Öú·½·¨
+        #region è¾…åŠ©æ–¹æ³•
 
         /// <summary>
-        /// ¸ù¾İµØÖ§Ãû³Æ»ñÈ¡µØÖ§¶ÔÏó
+        /// æ ¹æ®åœ°æ”¯åç§°è·å–åœ°æ”¯å¯¹è±¡
         /// </summary>
         private static EarthBranch GetEarthBranchByName(string name)
         {
@@ -1587,7 +1578,7 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// ¸ù¾İÌì¸ÉÃû³Æ»ñÈ¡Ìì¸É¶ÔÏó
+        /// æ ¹æ®å¤©å¹²åç§°è·å–å¤©å¹²å¯¹è±¡
         /// </summary>
         private static HeavenStem GetHeavenStemByName(string name)
         {
@@ -1598,21 +1589,21 @@ namespace tyme.culture
     }
 
     /// <summary>
-    /// ÉñÉ·À©Õ¹·½·¨
+    /// ç¥ç…æ‰©å±•æ–¹æ³•
     /// </summary>
     public static class ShenShaExtensions
     {
         /// <summary>
-        /// »ñÈ¡°Ë×ÖÉñÉ·
+        /// è·å–å…«å­—ç¥ç…
         /// </summary>
-        /// <param name="eightChar">°Ë×Ö¶ÔÏó</param>
-        /// <param name="isMale">ĞÔ±ğ£¬trueÎªÄĞĞÔ</param>
-        /// <returns>ÉñÉ·Ãû³ÆÁĞ±í</returns>
+        /// <param name="eightChar">å…«å­—å¯¹è±¡</param>
+        /// <param name="isMale">æ€§åˆ«ï¼Œtrueä¸ºç”·æ€§</param>
+        /// <returns>ç¥ç…åç§°åˆ—è¡¨</returns>
         public static List<string> GetShenSha(this EightChar eightChar, bool isMale)
         {
             var yearSound = eightChar.Year.Sound.GetName();
 
-            // ²éÑ¯ÈÕÖùÉñÉ·
+            // æŸ¥è¯¢æ—¥æŸ±ç¥ç…
             return PersonalGod.QueryShenSha(
                 eightChar.Day,
                 eightChar,
@@ -1623,13 +1614,13 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// »ñÈ¡Ö¸¶¨ÖùÎ»µÄÉñÉ·
+        /// è·å–æŒ‡å®šæŸ±ä½çš„ç¥ç…
         /// </summary>
-        /// <param name="eightChar">°Ë×Ö¶ÔÏó</param>
-        /// <param name="pillar">Òª²éÑ¯µÄÖù</param>
-        /// <param name="position">ÖùÎ»</param>
-        /// <param name="isMale">ĞÔ±ğ</param>
-        /// <returns>ÉñÉ·Ãû³ÆÁĞ±í</returns>
+        /// <param name="eightChar">å…«å­—å¯¹è±¡</param>
+        /// <param name="pillar">è¦æŸ¥è¯¢çš„æŸ±</param>
+        /// <param name="position">æŸ±ä½</param>
+        /// <param name="isMale">æ€§åˆ«</param>
+        /// <returns>ç¥ç…åç§°åˆ—è¡¨</returns>
         public static List<string> GetShenShaByPillar(this EightChar eightChar,
             SixtyCycle pillar,
             PersonalGod.PillarPosition position,
@@ -1640,17 +1631,17 @@ namespace tyme.culture
         }
 
         /// <summary>
-        /// »ñÈ¡ËÄÖùËùÓĞÉñÉ·£¨È¥ÖØ£©
+        /// è·å–å››æŸ±æ‰€æœ‰ç¥ç…ï¼ˆå»é‡ï¼‰
         /// </summary>
-        /// <param name="eightChar">°Ë×Ö¶ÔÏó</param>
-        /// <param name="isMale">ĞÔ±ğ</param>
-        /// <returns>ÉñÉ·Ãû³ÆÁĞ±í</returns>
+        /// <param name="eightChar">å…«å­—å¯¹è±¡</param>
+        /// <param name="isMale">æ€§åˆ«</param>
+        /// <returns>ç¥ç…åç§°åˆ—è¡¨</returns>
         public static List<string> GetAllShenSha(this EightChar eightChar, bool isMale)
         {
             var yearSound = eightChar.Year.Sound.GetName();
             var allShenSha = new HashSet<string>();
 
-            // ÄêÖù
+            // å¹´æŸ±
             var yearShenSha = PersonalGod.QueryShenSha(
                 eightChar.Year,
                 eightChar,
@@ -1661,7 +1652,7 @@ namespace tyme.culture
             foreach (var sha in yearShenSha)
                 allShenSha.Add(sha);
 
-            // ÔÂÖù
+            // æœˆæŸ±
             var monthShenSha = PersonalGod.QueryShenSha(
                 eightChar.Month,
                 eightChar,
@@ -1672,7 +1663,7 @@ namespace tyme.culture
             foreach (var sha in monthShenSha)
                 allShenSha.Add(sha);
 
-            // ÈÕÖù
+            // æ—¥æŸ±
             var dayShenSha = PersonalGod.QueryShenSha(
                 eightChar.Day,
                 eightChar,
@@ -1683,7 +1674,7 @@ namespace tyme.culture
             foreach (var sha in dayShenSha)
                 allShenSha.Add(sha);
 
-            // Ê±Öù
+            // æ—¶æŸ±
             var hourShenSha = PersonalGod.QueryShenSha(
                 eightChar.Hour,
                 eightChar,
@@ -1700,11 +1691,11 @@ namespace tyme.culture
 
 
         /// <summary>
-        /// »ñÈ¡ËÄÖùÉñÉ·¼üÖµ¶Ô£¨ĞÂÔö¹¦ÄÜ£©
+        /// è·å–å››æŸ±ç¥ç…é”®å€¼å¯¹ï¼ˆæ–°å¢åŠŸèƒ½ï¼‰
         /// </summary>
-        /// <param name="eightChar">°Ë×Ö¶ÔÏó</param>
-        /// <param name="isMale">ĞÔ±ğ</param>
-        /// <returns>ËÄÖùÉñÉ·×Öµä£¬¼üÎªÖùÎ»Ãû³Æ("ÄêÖù"/"ÔÂÖù"/"ÈÕÖù"/"Ê±Öù")£¬ÖµÎªÉñÉ·ÁĞ±í</returns>
+        /// <param name="eightChar">å…«å­—å¯¹è±¡</param>
+        /// <param name="isMale">æ€§åˆ«</param>
+        /// <returns>å››æŸ±ç¥ç…å­—å…¸ï¼Œé”®ä¸ºæŸ±ä½åç§°("å¹´æŸ±"/"æœˆæŸ±"/"æ—¥æŸ±"/"æ—¶æŸ±")ï¼Œå€¼ä¸ºç¥ç…åˆ—è¡¨</returns>
         public static Dictionary<string, List<string>> GetShenShaByPillars(this EightChar eightChar, bool isMale)
         {
             var yearSound = eightChar.Year.Sound.GetName();
@@ -1712,10 +1703,10 @@ namespace tyme.culture
 
             var pillars = new[]
             {
-                ("ÄêÖù", eightChar.Year, PersonalGod.PillarPosition.Year),
-                ("ÔÂÖù", eightChar.Month, PersonalGod.PillarPosition.Month),
-                ("ÈÕÖù", eightChar.Day, PersonalGod.PillarPosition.Day),
-                ("Ê±Öù", eightChar.Hour, PersonalGod.PillarPosition.Hour)
+                ("å¹´æŸ±", eightChar.Year, PersonalGod.PillarPosition.Year),
+                ("æœˆæŸ±", eightChar.Month, PersonalGod.PillarPosition.Month),
+                ("æ—¥æŸ±", eightChar.Day, PersonalGod.PillarPosition.Day),
+                ("æ—¶æŸ±", eightChar.Hour, PersonalGod.PillarPosition.Hour)
             };
 
             foreach (var (name, pillar, position) in pillars)
